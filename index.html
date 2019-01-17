@@ -41,12 +41,14 @@
    <div class="container-fluid">
        <div class="row">
            <div class="col-12 col-md-2 col-lg-2">
-               <a href="#" class="h-logo">CISS</a>
+               <a href="index.html" class="h-logo">CISS</a>
            </div>
            <div class="col-12 col-md-2 col-lg-2 col-xl-3">
-               <button class="h-btn">
+               <button class="h-btn btn-clck">
                    <span></span>
                    <span></span>
+                   <span class="hlp"></span>
+                   <span class="hlp"></span>                    
                </button>
            </div>
            <div class="col-12 col-md-2 col-lg-2 col-xl-1">
@@ -63,7 +65,7 @@
            <div class="col-12 col-md-2 col-lg-2">
                <div class="h-right">
                    <button class="h-srch"></button>
-                   <a href="#" class="h-user"></a>
+                   <a href="auth.html" class="h-user"></a>
                </div>
            </div>
        </div>
@@ -75,9 +77,11 @@
                    <a href="#" class="h-mob-logo">CISS</a>
                </div>
                <div class="col-6">
-                   <button class="h-mob-btn">
+                   <button class="h-mob-btn btn-clck">
                        <span></span>
                        <span></span>
+                       <span class="hlp"></span>
+                       <span class="hlp"></span>                       
                    </button>
                </div>
            </div>
@@ -85,6 +89,39 @@
    </div>
 </header>
 
+<div class="fix-menu hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-6">
+               <div class="fix-menu-cont">
+                    <div class="fix-menu-ttl">Меню</div>
+                    <div class="fix-menu-txt">
+                        <a href="#" title="Отзывы">Отзывы</a>
+                        <a href="#" title="Партнеры">Партнеры</a>
+                    </div>
+                    <a href="#" class="fix-menu-cat">Каталог <span></span></a>
+               </div>
+            </div>
+            <div class="col-6 col-lg-6 fix-menu-forcat">
+                <div class="fix-menu-menu">
+                    <ul>
+                        <li><a href="services.html" title="Сервисы"><span>Сервисы <sup>6</sup></span></a></li>
+                        <li><a href="news.html" title="Новости"><span>Новости <sup>12</sup></span></a></li>
+                        <li><a href="about.html" title="О компании"><span>О компании</span></a></li>
+                        <li><a href="contacts.html" title="Контакты"><span>Контакты</span></a></li>
+                        <li><a href="news.html" title="Статьи"><span>Статьи <sup>8</sup></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="fix-menu-mob">
+                    <a href="tel:74959262880">+7 (495) 926-28-80</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
 <div class="wrapper">
     <div class="main">
         <div class="container">
@@ -98,18 +135,18 @@
                 <div class="col-12 col-lg-6">
                     <div class="main-menu">
                         <ul>
-                            <li><a href="#" title="Сервисы"><span>Сервисы <sup>6</sup></span></a></li>
-                            <li><a href="#" title="Новости"><span>Новости <sup>12</sup></span></a></li>
-                            <li><a href="#" title="О компании"><span>О компании</span></a></li>
-                            <li><a href="#" title="Контакты"><span>Контакты</span></a></li>
-                            <li><a href="#" title="Статьи"><span>Статьи <sup>8</sup></span></a></li>
+                            <li><a href="services.html" title="Сервисы"><span>Сервисы <sup>6</sup></span></a></li>
+                            <li><a href="news.html" title="Новости"><span>Новости <sup>12</sup></span></a></li>
+                            <li><a href="about.html" title="О компании"><span>О компании</span></a></li>
+                            <li><a href="contacts.html" title="Контакты"><span>Контакты</span></a></li>
+                            <li><a href="news.html" title="Статьи"><span>Статьи <sup>8</sup></span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="main-mob">
                 <button class="main-mob-srch"></button>
-                <a href="#" class="main-mob-user"></a>                
+                <a href="cab.html" class="main-mob-user"></a>                
             </div>
         </div>
         <div class="container-fluid">
@@ -548,6 +585,22 @@ $('.fourth-bl-ttl').click(function(){
         neigBour.addClass('hidden');
     }
 });    
+</script>
+<script>
+$('.btn-clck').click(function(){
+    if($('.fix-menu').hasClass('hidden')){
+        $('.fix-menu').removeClass('hidden');
+        $(this).addClass('opened');
+    }
+    else{
+        $('.fix-menu').addClass('hidden');
+        $(this).removeClass('opened');
+    }
+});    
+</script>
+<script>
+    if($(windows).width() < 768)
+        $('.fix-menu-cat').appendTo('.fix-menu-forcat'); 
 </script>
 </body>
 </html>
