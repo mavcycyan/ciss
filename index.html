@@ -13,7 +13,6 @@
 	<title>CISS</title> 
 
     <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
-    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" /> 
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="css/main.css" rel="stylesheet">
@@ -162,7 +161,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                   <a href="#" class="second-cont">
+                   <a href="catalog.html" class="second-cont">
                        <div class="second-bl">
                             <div class="second-bl-ttl">Каталог Категорий Нашей<br>продукции</div>
                             <div class="second-bl-txt">Качественое оборудование и производство</div>
@@ -171,7 +170,7 @@
                    </a>
                 </div>
                 <div class="col-12 col-lg-6">
-                   <a href="#" class="second-cont">
+                   <a href="services.html" class="second-cont">
                        <div class="second-bl">
                             <div class="second-bl-ttl">Сервисы</div>
                             <div class="second-bl-txt">Строительство и обслуживание</div>
@@ -180,7 +179,7 @@
                    </a>
                 </div>
                 <div class="col-12 col-lg-6">
-                   <a href="#" class="second-cont">
+                   <a href="about.html" class="second-cont">
                        <div class="second-bl">
                             <div class="second-bl-ttl">О компании</div>
                             <div class="second-bl-txt">Факты и цифры нашей истории</div>
@@ -199,7 +198,7 @@
                             <div class="second-last-bl-txt">Партнера</div>
                        </div>  
                        <div class="second-last-btm">
-                           <a href="#" class="second-last-btm-cat">Каталог <span></span></a>
+                           <a href="catalog.html" class="second-last-btm-cat">Каталог <span></span></a>
                            <a href="#" class="second-last-btm-ques">Задать вопрос</a>
                        </div>                    
                    </div>
@@ -215,7 +214,7 @@
                         <div class="third-ttl">Строительство Скважин<br>и возведение на них</div>
                         <div class="third-txt">Совместный или самостоятельный интегрированный<br>менеджмент проекта</div>
                         <div class="third-btm">
-                            <a href="#" class="third-btm-cat">Каталог <span></span></a>
+                            <a href="catalog.html" class="third-btm-cat">Каталог <span></span></a>
                             <a href="#" class="third-btm-ques">Задать вопрос</a>
                         </div>
                    </div>
@@ -417,11 +416,11 @@
             <div class="col-12">
                 <nav class="f-menu">
                     <ul>
-                        <li><a href="#" title="Сервисы">Сервисы</a></li>
-                        <li><a href="#" title="Вакансии">Вакансии</a></li>
-                        <li><a href="#" title="Новости">Новости</a></li>
-                        <li><a href="#" title="О компании">О компании</a></li>
-                        <li><a href="#" title="Контакты">Контакты</a></li>
+                        <li><a href="services.html" title="Сервисы">Сервисы</a></li>
+                        <li><a href="about_vacancy.html" title="Вакансии">Вакансии</a></li>
+                        <li><a href="news.html" title="Новости">Новости</a></li>
+                        <li><a href="about.html" title="О компании">О компании</a></li>
+                        <li><a href="contacts.html" title="Контакты">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -471,8 +470,8 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="f-links">
-                                <a href="#" title="Личный кабинет">Личный кабинет</a><br>
-                                <a href="#" title="Вакансии">Вакансии</a>
+                                <a href="cab.html" title="Личный кабинет">Личный кабинет</a><br>
+                                <a href="about_vacancy.html" title="Вакансии">Вакансии</a>
                             </div>
                         </div>
                     </div>
@@ -591,12 +590,14 @@ $('.btn-clck').click(function(){
     if($('.fix-menu').hasClass('hidden')){
         $('.fix-menu').removeClass('hidden');
         $(this).addClass('opened');
+        $('header').addClass('color-white');
     }
     else{
         $('.fix-menu').addClass('hidden');
         $(this).removeClass('opened');
+        $('header').removeClass('color-white');
     }
-});    
+});  
 </script>
 <script>
     if($(windows).width() < 768)
