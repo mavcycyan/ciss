@@ -60,8 +60,8 @@
            </div>
            <div class="col-12 col-md-2 col-lg-2">
                <div class="h-right">
-                   <button class="h-srch"></button>
-                   <a href="auth.html" class="h-user"></a>
+                   <button class="h-srch srch-clck"></button>
+                   <button class="h-user auth-clck"></button>
                </div>
            </div>
        </div>
@@ -70,9 +70,15 @@
        <div class="container-fluid">
            <div class="row">
                <div class="col-6">
-                   <a href="#" class="h-mob-logo">CISS</a>
+                   <a href="index.html" class="h-mob-logo">CISS</a>
                </div>
                <div class="col-6">
+                   <div class="h-mob-lang">
+                       <button>En</button>
+                       <div class="h-lang-cont">
+                           <a href="#">漢語</a>
+                       </div>
+                   </div>
                    <button class="h-mob-btn btn-clck">
                        <span></span>
                        <span></span>
@@ -117,6 +123,71 @@
         </div>
     </div>
 </div>
+<div class="fix-srch hidden">
+    <div class="container">
+        <div class="row">
+           <div class="col-12">
+               <div class="fix-srch-mob">
+                    <a href="#" class="fix-srch-mob-cat">Каталог <span></span></a>
+                    <a href="#" class="fix-srch-mob-ques">Задать вопрос</a>
+                    <button class="fix-srch-mob-cls srch-clck">X</button>
+               </div>
+           </div>
+            <div class="col-12 col-lg-6">
+               <div class="fix-srch-cont">
+                   <div class="fix-srch-top_txt">Поиск</div>
+                    <div class="fix-srch-ttl"><input type="text" placeholder="Ваш запрос"></div>
+                    <div class="fix-srch-btm_txt">Найдено: 2</div>
+                    <a href="#" class="fix-srch-cat">Каталог <span></span></a>
+                    <a href="#" class="fix-srch-ques">Задать вопрос</a>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="fix-srch-fnd">
+                    <div class="fix-srch-fnd-bl">
+                        <a href="#" class="fix-srch-fnd-bl-ttl">Буровые Вышки</a>
+                        <div class="fix-srch-fnd-bl-txt">Категория</div>
+                    </div>
+                </div>
+                <div class="fix-srch-fnd">
+                    <div class="fix-srch-fnd-bl">
+                        <a href="#" class="fix-srch-fnd-bl-ttl">Как бурить</a>
+                        <div class="fix-srch-fnd-bl-txt">Статья</div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fix-auth hidden">
+    <div class="container">
+        <div class="row">
+           <div class="col-12">
+               <div class="fix-auth-mob">
+                    <a href="#" class="fix-auth-mob-ttl">Вход в Личный Кабинет</a>
+                    <button class="fix-auth-mob-cls auth-clck">X</button>
+               </div>
+           </div>
+            <div class="col-12 col-lg-6">
+               <div class="fix-auth-cont">
+                   <form action="">
+                        <div class="fix-auth-top_txt">E-mail</div>
+                        <div class="fix-auth-ttl"><input type="text" placeholder="E-mail"></div>
+                        <div class="fix-auth-btm_txt">Пароль</div>
+                        <div class="fix-auth-ttl"><input type="password" placeholder="Пароль"></div>
+                        <button class="fix-auth-ques">Войти</button>
+                    </form>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="fix-auth-right">
+                    <a href="#" class="fix-auth-right-ttl">Вход в Личный Кабинет</a>
+                    <a href="#" class="fix-auth-right-forgot">Забыли пароль ?</a> 
+                </div>               
+            </div>
+        </div>
+    </div>
+</div>     
     
 <div class="wrapper">
       <div class="page_single_news">
@@ -258,32 +329,8 @@
     </div>
 </footer>
   
-<script>
-var tabCur;    
-var tabBefore = $('.page_catalog-right-bl').data('for', 'tab2');
-$('.page_catalog-right-bl').click(function(){
-    //alert($(this).data('for'));
-    alert($(this).html());
-});    
-</script>  
-  
-<script>
-$('.btn-clck').click(function(){
-    if($('.fix-menu').hasClass('hidden')){
-        $('.fix-menu').removeClass('hidden');
-        $(this).addClass('opened');
-        $('header').addClass('color-white');
-    }
-    else{
-        $('.fix-menu').addClass('hidden');
-        $(this).removeClass('opened');
-        $('header').removeClass('color-white');
-    }
-});    
-</script>
-<script>
-    if($(window).width() < 768)
-        $('.fix-menu-cat').appendTo('.fix-menu-forcat'); 
-</script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

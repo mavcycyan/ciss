@@ -63,8 +63,8 @@
            </div>
            <div class="col-12 col-md-2 col-lg-2">
                <div class="h-right">
-                   <button class="h-srch"></button>
-                   <a href="auth.html" class="h-user"></a>
+                   <button class="h-srch srch-clck"></button>
+                   <button class="h-user auth-clck"></button>
                </div>
            </div>
        </div>
@@ -73,9 +73,15 @@
        <div class="container-fluid">
            <div class="row">
                <div class="col-6">
-                   <a href="#" class="h-mob-logo">CISS</a>
+                   <a href="index.html" class="h-mob-logo">CISS</a>
                </div>
                <div class="col-6">
+                   <div class="h-mob-lang">
+                       <button>En</button>
+                       <div class="h-lang-cont">
+                           <a href="#">漢語</a>
+                       </div>
+                   </div>
                    <button class="h-mob-btn btn-clck">
                        <span></span>
                        <span></span>
@@ -88,6 +94,9 @@
    </div>
 </header>
 
+<div id="left-menu" class="left-menu">
+    
+</div>
 <div class="fix-menu hidden">
     <div class="container">
         <div class="row">
@@ -120,9 +129,74 @@
         </div>
     </div>
 </div>
+<div class="fix-srch hidden">
+    <div class="container">
+        <div class="row">
+           <div class="col-12">
+               <div class="fix-srch-mob">
+                    <a href="#" class="fix-srch-mob-cat">Каталог <span></span></a>
+                    <a href="#" class="fix-srch-mob-ques">Задать вопрос</a>
+                    <button class="fix-srch-mob-cls srch-clck">X</button>
+               </div>
+           </div>
+            <div class="col-12 col-lg-6">
+               <div class="fix-srch-cont">
+                   <div class="fix-srch-top_txt">Поиск</div>
+                    <div class="fix-srch-ttl"><input type="text" placeholder="Ваш запрос"></div>
+                    <div class="fix-srch-btm_txt">Найдено: 2</div>
+                    <a href="#" class="fix-srch-cat">Каталог <span></span></a>
+                    <a href="#" class="fix-srch-ques">Задать вопрос</a>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="fix-srch-fnd">
+                    <div class="fix-srch-fnd-bl">
+                        <a href="#" class="fix-srch-fnd-bl-ttl">Буровые Вышки</a>
+                        <div class="fix-srch-fnd-bl-txt">Категория</div>
+                    </div>
+                </div>
+                <div class="fix-srch-fnd">
+                    <div class="fix-srch-fnd-bl">
+                        <a href="#" class="fix-srch-fnd-bl-ttl">Как бурить</a>
+                        <div class="fix-srch-fnd-bl-txt">Статья</div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fix-auth hidden">
+    <div class="container">
+        <div class="row">
+           <div class="col-12">
+               <div class="fix-auth-mob">
+                    <a href="#" class="fix-auth-mob-ttl">Вход в Личный Кабинет</a>
+                    <button class="fix-auth-mob-cls auth-clck">X</button>
+               </div>
+           </div>
+            <div class="col-12 col-lg-6">
+               <div class="fix-auth-cont">
+                   <form action="">
+                        <div class="fix-auth-top_txt">E-mail</div>
+                        <div class="fix-auth-ttl"><input type="text" placeholder="E-mail"></div>
+                        <div class="fix-auth-btm_txt">Пароль</div>
+                        <div class="fix-auth-ttl"><input type="password" placeholder="Пароль"></div>
+                        <button class="fix-auth-ques">Войти</button>
+                    </form>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="fix-auth-right">
+                    <a href="#" class="fix-auth-right-ttl">Вход в Личный Кабинет</a>
+                    <a href="#" class="fix-auth-right-forgot">Забыли пароль ?</a> 
+                </div>               
+            </div>
+        </div>
+    </div>
+</div>   
     
-<div class="wrapper">
-    <div class="main">
+<div class="wrapper" id="scrolling">
+    <div class="main section" id="main">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -144,8 +218,8 @@
                 </div>
             </div>
             <div class="main-mob">
-                <button class="main-mob-srch"></button>
-                <a href="cab.html" class="main-mob-user"></a>                
+                <button class="main-mob-srch srch-clck"></button>
+                <button class="main-mob-user auth-clck"></button>                
             </div>
         </div>
         <div class="container-fluid">
@@ -157,7 +231,7 @@
             </div>
         </div>
     </div>
-    <div id="second" class="second">
+    <div id="second" class="second section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -206,7 +280,7 @@
             </div>
         </div>
     </div>   
-    <div class="third">
+    <div class="third section" id="third">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -238,7 +312,7 @@
             </div>
         </div>
     </div>
-    <div class="fourth">
+    <div class="fourth section" id="fourth">
         <div class="container">
             <div class="row">
                 <!--<div class="col-12 col-lg-6">
@@ -330,7 +404,7 @@
             </div>
         </div>
     </div>   
-    <div class="fifth">
+    <div class="fifth section" id="fifth">
         <div class="container">
             <div class="fifth-cont">
                 <div class="row">
@@ -392,7 +466,7 @@
             </div>
         </div>
     </div>  
-    <div class="partn">
+    <div class="partn section" id="partn">
         <div class="container">
             <div class="partn-ttl">Наши Партнеры и Клиенты</div>
             <div class="partn-sl">
@@ -488,24 +562,7 @@
 </footer>
   
 <script>
-    $(window).on('scroll resize load', function(){
-        if($(window).scrollTop() > $('header').height()){
-            $('header').addClass('fixed');
-        }
-        else {
-            $('header').removeClass('fixed');
-        }
-    });
-    $(window).on('scroll resize load', function(){
-        if($(window).width() < 768){
-            if($(window).scrollTop() > $('.partn').offset().top && $(window).scrollTop() < $('.partn').offset().top+$('.partn').height()+$('.partn').innerHeight()){
-                $('header').addClass('color-black');
-            }
-            else {
-                $('header').removeClass('color-black');
-            }
-        }
-    });    
+  
 </script>  
 <script>
 $('#slide-down').click(function(){
@@ -557,6 +614,8 @@ $(document).ready(function() {
         onSliderLoad: function() {
                 $('#slider-partn').removeClass('cS-hidden');
                 $('.partn .lSPager').appendTo('.partn .lSAction');
+                //$('.partn .lSPager').appendTo('.partn-sl');
+                //$('.partn .lSAction').appendTo('.partn-sl');            
         },
         responsive : [
         {
@@ -585,23 +644,52 @@ $('.fourth-bl-ttl').click(function(){
     }
 });    
 </script>
-<script>
-$('.btn-clck').click(function(){
-    if($('.fix-menu').hasClass('hidden')){
-        $('.fix-menu').removeClass('hidden');
-        $(this).addClass('opened');
-        $('header').addClass('color-white');
-    }
-    else{
-        $('.fix-menu').addClass('hidden');
-        $(this).removeClass('opened');
-        $('header').removeClass('color-white');
-    }
-});  
+
+<script>  
+if($(window).width() > 991){
+    var lmenHtml;   
+    var newCont; 
+    var offSet = [];
+    var secDat = [];
+    $('.section').each(function(num){
+        offSet[num] = $(this).offset().top;
+        secDat[num] = $(this).attr('id');
+        lmenHtml = $('#left-menu').html();
+        if($(window).scrollTop() >= offSet[num]){
+            $('#left-menu a').removeClass('active');
+            newCont = '<a href="#'+secDat[num]+'" class="active"></a>';
+        }
+        else{
+            newCont = '<a href="#'+secDat[num]+'"></a>';
+        }
+        $('#left-menu').html(lmenHtml+newCont);
+    });  
+    $(window).on('load scroll resize', function(){
+        /*$.each(offSet, function(num){
+            switch($(window).scrollTop()){
+                case offSet[num]:
+                    $('#left-menu a').removeClass('active');
+                    $('#'+secDat[num]).addClass('active');
+            }
+        });*/
+    });    
+    $('#left-menu a').click(function(){
+        $('#left-menu a').removeClass('active');
+        $(this).addClass('active');
+    });    
+}    
+ 
+       
+
 </script>
 <script>
-    if($(windows).width() < 768)
-        $('.fix-menu-cat').appendTo('.fix-menu-forcat'); 
+$('#left-menu a').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+return false;
+});     
 </script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

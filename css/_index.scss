@@ -9,8 +9,8 @@
     &-menu {margin-top: 146px;
         ul {padding: 0;margin: 0;list-style: none;
             li {height: 97px;
-                a {display: block; width: 100%;height: 100%;color: #fff;background: rgba(52, 94, 148, 0); padding: 27px 126px 31px; font-size: 30px;
-                    &:hover, &:focus {background: rgba(52, 94, 148, 0.7);text-decoration: none;}
+                a {display: block; width: 100%;height: 100%;color: #ffffff80;background: rgba(52, 94, 148, 0); padding: 27px 126px 31px; font-size: 30px;
+                    &:hover, &:focus {background: rgba(52, 94, 148, 0.7);text-decoration: none;color: #fff;}
                     sup { font-size: 16px; top: -17px; }
                 }
             }
@@ -53,7 +53,7 @@
         }
         &-mob {position: absolute; bottom: 32px; right: 22px;display: block;
             &-srch{width: 20px;height: 20px;display: inline-block;background: url('../img/search.svg'); background-size: cover;border: none; cursor: pointer;margin-right: 20px;}    
-            &-user{width: 22px;height: 20px;display: inline-block;background: url('../img/user.svg'); background-size: cover;margin-left: 20px;}
+            &-user{width: 22px;height: 20px;display: inline-block;background: url('../img/user.svg'); background-size: cover;margin-left: 20px; border: 0;cursor: pointer;}
         }
     }
 }
@@ -334,9 +334,28 @@
 
 }
 @media(max-width: 767px) {
-    .partn {padding: 107px 0 71px;
-        &-sl{
-            .lSAction { margin-top: 40px;}
+    .partn {padding: 107px 0 71px;overflow-x: hidden;
+        &-sl{ max-width: 260px;margin: 0 auto;
+            .lSAction { margin-top: 40px;
+                a {
+                    &.lSPrev { left: -20px; } 
+                    &.lSNext { right: -20px; }
+                }
+            }
+            .lSSlideOuter { overflow: visible; } 
+            .lSSlideWrapper { overflow: visible; }
         }
     }
+}
+
+@media(max-width: 1600px) and (min-width: 992px){
+    .left-menu { position: fixed; left: 1%; z-index: 205; top: 0; display: flex; justify-content: space-between; flex-direction: column; min-height: 100vh; padding: 132px 0;
+        a { display: block; width: 15px; height: 15px; background: transparent; border: 1px solid transparent; border-radius: 50%; 
+            &.active {background: #a4a2ab; border: 1px solid #fff;
+                &:after {content: ''; display: block; width: 10px; height: 18px; background: url('../img/l_menu.png'); left: 0; right: 0; margin: 0 auto;}
+            }
+            &:before {content: '';width: 5px;height: 5px;background: #fff;border-radius: 50%;display: block; margin: 4px;}
+        }
+        /*a { display: block; width: 10px; height: 18px; background: url('../img/l_menu.png'); }*/
+    } 
 }
