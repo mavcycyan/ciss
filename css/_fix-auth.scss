@@ -1,0 +1,54 @@
+/*fix-menu*/
+.fix-auth {overflow: auto;width: 100%; height: 100vh; background: #345e94;position: fixed; z-index: 190; padding-top: 132px; padding-bottom: 64px;
+    &.hidden {display: none;}
+    &-cont {padding-top: 146px;padding-left: 100px;min-height: 100%;}
+    &-ttl {font-size: 48px;line-height: 1.29;color: #fff;
+        input[type="text"], input[type="password"] { background: none; border: 0; color: #fff; border-bottom: 1px solid #ffffff80; padding-bottom: 15px;width: 100%;
+            &:focus { border: none; border-bottom: 1px solid #ffffff; box-shadow: none; outline: 0; } 
+        } 
+    }
+    &-top_txt { line-height: 1.46; color: #fff; margin-bottom: 25px; opacity:0.5;} 
+    &-btm_txt { line-height: 1.46; color: #fff; margin-top: 60px; margin-bottom: 25px; opacity:0.5;}
+    &-ques {font-size: 30px; color: #fff; display: block; opacity: 0.7; margin-top: 50px; border: 0; background: none; cursor: pointer;
+        &:hover, &:focus {color:#fff; opacity: 1;}
+    }
+    &-right {padding-top: 146px; display: flex; justify-content: space-between; flex-direction: column; min-height: 100%;
+        &-ttl { color: #fff; font-size: 30px; padding-right: 20px; position: relative; display: block;
+            &:hover, &:focus {color: #fff;}
+        } 
+        &-forgot {font-size: 30px; color: #fff; display: block; opacity: 0.7; margin-top: 50px; align-items: flex-end; margin-left: 7px;
+            &:hover, &:focus {color:#fff;}
+        }
+    }    
+    &-mob { display: none;}
+}
+/*fix-menu*/
+@media(max-width: 1600px) and (min-width: 992px){
+    .fix-auth {
+        &-cont { padding-left: 50px; } 
+        &-right { margin-right: 50px; }
+    }
+}
+@media(max-width: 991px) and (min-width: 768px){
+    .fix-auth{
+        &-cont { padding-top: 60px;padding-left: 0px;}
+        &-ques {margin-top: 69px;}
+        &-controls { margin-top: 70px; } 
+        &-cat { padding: 70px 0px; }
+    }
+}
+@media(max-width: 767px) {
+    .fix-auth { padding-top: 62px; padding-bottom: 22px;
+        &-cont { padding: 10px 7px; } 
+        &-ttl { font-size: 30px; }
+        &-btm_txt { margin-top: 63px; }      
+        &-controls { display: none; }
+        &-right {margin-top: 0px; padding-top: 0;
+            &-ttl {display: none;}
+        }
+        &-mob { display: block; overflow: hidden; margin-bottom: 30px;
+            &-ttl {font-size: 20px; color: #fff; display: block; margin-top: 28px; opacity: 0.7; float: left; margin-left: 7px; }
+            &-cls {display: block; float: right; width: 24px; height: 24px; border: 0; background: none;margin-top: 30px; color: #fff;}
+        }
+    }
+}
