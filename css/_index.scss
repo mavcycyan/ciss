@@ -348,14 +348,37 @@
     }
 }
 
-@media(max-width: 1600px) and (min-width: 992px){
-    .left-menu { position: fixed; left: 1%; z-index: 205; top: 0; display: flex; justify-content: space-between; flex-direction: column; min-height: 100vh; padding: 132px 0;
+.left-menu { position: fixed; left: 7%; z-index: 205; top: 0; display: flex; justify-content: space-between; flex-direction: column; min-height: 100vh; padding: 132px 0; list-style: none;margin: 0;
+    &:before {content: ''; width: 1px; background: #fff; height: 100vh; position: absolute; display: block; bottom: 0; left: 0; right: 0; margin: 0 auto; opacity: 0.5;}
+    li {position: relative;
         a { display: block; width: 15px; height: 15px; background: transparent; border: 1px solid transparent; border-radius: 50%; 
-            &.active {background: #a4a2ab; border: 1px solid #fff;
-                &:after {content: ''; display: block; width: 10px; height: 18px; background: url('../img/l_menu.png'); left: 0; right: 0; margin: 0 auto;}
-            }
             &:before {content: '';width: 5px;height: 5px;background: #fff;border-radius: 50%;display: block; margin: 4px;}
         }
-        /*a { display: block; width: 10px; height: 18px; background: url('../img/l_menu.png'); }*/
-    } 
+        &.active {
+            &:before { content: ''; width: 1px; background: #fff; height: 100vh; position: absolute; display: block; bottom: 0; left: 0; right: 0; margin: 0 auto; }
+            a {background: #a4a2ab; border: 1px solid #fff;
+                &:after {content: ''; display: block; width: 10px; height: 18px; background: url('../img/l_menu.png'); left: 0; right: 0; margin: 0 auto;}    
+            }
+        }            
+    }
+} 
+@media(max-width: 1920px) and (min-width: 992px){
+    .main {padding: 0;min-height: auto;}
+    .main-cont { padding-top: 8vh; } 
+    .main-menu { margin-top: 8vh; }
+    .main-controls { margin-top: 4vh; }
+    .second-bl { padding-bottom: 9vh;}
+    .third-right { padding: 16vh 128px; min-height: 100vh;}
+    .fifth { padding-top: 2vh; } 
+    .fifth-sl { margin-top: 8vh; }
 }
+@media(max-width: 1600px) and (min-width: 992px){
+    .left-menu {left: 1%;
+        
+    }
+}
+@media(max-width: 1199px) {
+    .left-menu {display: none;}
+}
+
+

@@ -11,7 +11,8 @@
 	<meta name="description" content="" />
 	<link rel="canonical" href="">
 	<title>CISS</title> 
-
+   
+    <link rel="stylesheet" href="css/fullpage.css" type="text/css" />
     <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -94,9 +95,15 @@
    </div>
 </header>
 
-<div id="left-menu" class="left-menu">
-    
-</div>
+<ul id="left-menu" class="left-menu">
+	<li data-menuanchor="main" class="active"><a href="#main"></a></li>
+	<li data-menuanchor="second"><a href="#second"></a></li>
+	<li data-menuanchor="third"><a href="#third"></a></li>
+	<li data-menuanchor="fourth"><a href="#fourth"></a></li>
+	<li data-menuanchor="fifth"><a href="#fifth"></a></li>
+	<li data-menuanchor="partn"><a href="#partn"></a></li>
+	<li data-menuanchor="footer"><a href="#footer"></a></li>
+</ul>
 <div class="fix-menu hidden">
     <div class="container">
         <div class="row">
@@ -195,8 +202,8 @@
     </div>
 </div>   
     
-<div class="wrapper" id="scrolling">
-    <div class="main section" id="main">
+<div class="wrapper" id="fullpage">
+    <div class="main section active">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -231,7 +238,7 @@
             </div>
         </div>
     </div>
-    <div id="second" class="second section">
+    <div class="second section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -280,7 +287,7 @@
             </div>
         </div>
     </div>   
-    <div class="third section" id="third">
+    <div class="third section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -312,47 +319,9 @@
             </div>
         </div>
     </div>
-    <div class="fourth section" id="fourth">
+    <div class="fourth section">
         <div class="container">
             <div class="row">
-                <!--<div class="col-12 col-lg-6">
-                    <div class="fourth-cont">
-                        <div class="fourth-bl">
-                            <div class="fourth-bl-ttl">Новости</div>
-                        </div>
-                        <div class="fourth-news">
-                            <div class="fourth-news-ttl">ЛСП-1 м/р им. В. Филановского<br>Каспийское море</div>
-                            <div class="fourth-news-txt">Установлены системы ПВО поставленные<br>и смонтированные ООО «CISS»</div>
-                        </div>
-                        <div class="fourth-bl st">
-                            <div class="fourth-bl-ttl">Статьи</div>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="fourth-cont right">
-                        <div class="fourth-bl">
-                            <div class="fourth-bl-ttl">Пресс-Релизы</div>
-                            <div class="fourth-releaze">
-                                <div class="fourth-releaze-ttl">Шеф монтажные работы системы<br>пневмотранспорта сыпучих<br>материалов для ЛСП-2 M/P им.<br>В. Филановского</div>
-                                <div class="fourth-releaze-date">24 марта</div>
-                            </div>
-                            <div class="fourth-releaze">
-                                <div class="fourth-releaze-ttl">Дивертор 37 ½”- 500 PSI</div>
-                                <div class="fourth-releaze-date">15 мая</div>
-                            </div>
-                            <div class="fourth-releaze">
-                                <div class="fourth-releaze-ttl">Универсальные Превентора</div>
-                                <div class="fourth-releaze-date">5 апреля</div>
-                            </div>
-                            <div class="fourth-releaze">
-                                <div class="fourth-releaze-ttl">Двухплашечный Превентор</div>
-                                <div class="fourth-releaze-date">12 марта</div>
-                            </div>    
-                            <div class="fourth-more">Показать еще</div>                                                                                
-                        </div>
-                    </div>
-                </div> --> 
                 <div class="col-12 col-lg-6">
                     <div class="fourth-cont">
                         <div class="fourth-bl">
@@ -404,7 +373,7 @@
             </div>
         </div>
     </div>   
-    <div class="fifth section" id="fifth">
+    <div class="fifth section">
         <div class="container">
             <div class="fifth-cont">
                 <div class="row">
@@ -466,7 +435,7 @@
             </div>
         </div>
     </div>  
-    <div class="partn section" id="partn">
+    <div class="partn section">
         <div class="container">
             <div class="partn-ttl">Наши Партнеры и Клиенты</div>
             <div class="partn-sl">
@@ -483,83 +452,84 @@
             </div>
         </div>
     </div>   
-</div>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="f-menu">
-                    <ul>
-                        <li><a href="services.html" title="Сервисы">Сервисы</a></li>
-                        <li><a href="about_vacancy.html" title="Вакансии">Вакансии</a></li>
-                        <li><a href="news.html" title="Новости">Новости</a></li>
-                        <li><a href="about.html" title="О компании">О компании</a></li>
-                        <li><a href="contacts.html" title="Контакты">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <div class="f-sep"></div>
-    <div class="f-cont">
+    <footer class="section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="f-ttl">Каталог</div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <a href="#" class="f-txt">Резинотехнические детали нефтяного оборудования</a>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <a href="#" class="f-txt">Буровые Установки</a>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <a href="#" class="f-txt">Ротор и ЗИП</a>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <a href="#" class="f-txt">Буровые насосы и ЗИП</a>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <a href="#" class="f-txt">Оборудование противовыбросовое и ЗИП</a>
-                        </div>       
-                        <div class="col-12 col-md-6 col-lg-6">
-                            <a href="#" class="f-txt">Арматура</a>
-                        </div>                       
-                    </div>
-                </div>    
-                <div class="col-lg-1"></div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="f-ttl">Контакты</div>
-                            <div class="f-data">109147 г. Москва, ул. Марксистская, д.14/16, стр. 1</div>
-                            <div class="f-data">Тел.: <a href="tel:74959262880">+7 (495) 926-28-80</a></div>
-                            <div class="f-data"><a href="mail:aglazkov@ciss.msk.ru">aglazkov@ciss.msk.ru</a></div>
-                        </div>                      
-                    </div>
-                </div>   
-                <div class="col-12 col-md-6 col-lg-2">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="f-links">
-                                <a href="cab.html" title="Личный кабинет">Личный кабинет</a><br>
-                                <a href="about_vacancy.html" title="Вакансии">Вакансии</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>                                                                 
+                <div class="col-12">
+                    <nav class="f-menu">
+                        <ul>
+                            <li><a href="services.html" title="Сервисы">Сервисы</a></li>
+                            <li><a href="about_vacancy.html" title="Вакансии">Вакансии</a></li>
+                            <li><a href="news.html" title="Новости">Новости</a></li>
+                            <li><a href="about.html" title="О компании">О компании</a></li>
+                            <li><a href="contacts.html" title="Контакты">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="f-sep mob"></div>
-    <div class="f-btm">
-        <a href="#" class="hidden-xs">Политика конфиденциальности</a>
-        <span class="hidden-xs">© 2018 - CISS - Все права защищены</span>
-        <span>Разработано в <a href="#">YOD</a></span>
-    </div>
-</footer>
+        <div class="f-sep"></div>
+        <div class="f-cont">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="f-ttl">Каталог</div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <a href="#" class="f-txt">Резинотехнические детали нефтяного оборудования</a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <a href="#" class="f-txt">Буровые Установки</a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <a href="#" class="f-txt">Ротор и ЗИП</a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <a href="#" class="f-txt">Буровые насосы и ЗИП</a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <a href="#" class="f-txt">Оборудование противовыбросовое и ЗИП</a>
+                            </div>       
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <a href="#" class="f-txt">Арматура</a>
+                            </div>                       
+                        </div>
+                    </div>    
+                    <div class="col-lg-1"></div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="f-ttl">Контакты</div>
+                                <div class="f-data">109147 г. Москва, ул. Марксистская, д.14/16, стр. 1</div>
+                                <div class="f-data">Тел.: <a href="tel:74959262880">+7 (495) 926-28-80</a></div>
+                                <div class="f-data"><a href="mail:aglazkov@ciss.msk.ru">aglazkov@ciss.msk.ru</a></div>
+                            </div>                      
+                        </div>
+                    </div>   
+                    <div class="col-12 col-md-6 col-lg-2">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="f-links">
+                                    <a href="cab.html" title="Личный кабинет">Личный кабинет</a><br>
+                                    <a href="about_vacancy.html" title="Вакансии">Вакансии</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                                                 
+                </div>
+            </div>
+        </div>
+        <div class="f-sep mob"></div>
+        <div class="f-btm">
+            <a href="#" class="hidden-xs">Политика конфиденциальности</a>
+            <span class="hidden-xs">© 2018 - CISS - Все права защищены</span>
+            <span>Разработано в <a href="#">YOD</a></span>
+        </div>
+    </footer>    
+</div>
+
   
 <script>
   
@@ -645,50 +615,79 @@ $('.fourth-bl-ttl').click(function(){
 });    
 </script>
 
-<script>  
-if($(window).width() > 991){
-    var lmenHtml;   
-    var newCont; 
-    var offSet = [];
-    var secDat = [];
-    $('.section').each(function(num){
-        offSet[num] = $(this).offset().top;
-        secDat[num] = $(this).attr('id');
-        lmenHtml = $('#left-menu').html();
-        if($(window).scrollTop() >= offSet[num]){
-            $('#left-menu a').removeClass('active');
-            newCont = '<a href="#'+secDat[num]+'" class="active"></a>';
-        }
-        else{
-            newCont = '<a href="#'+secDat[num]+'"></a>';
-        }
-        $('#left-menu').html(lmenHtml+newCont);
-    });  
-    $(window).on('load scroll resize', function(){
-        /*$.each(offSet, function(num){
-            switch($(window).scrollTop()){
-                case offSet[num]:
-                    $('#left-menu a').removeClass('active');
-                    $('#'+secDat[num]).addClass('active');
-            }
-        });*/
-    });    
-    $('#left-menu a').click(function(){
-        $('#left-menu a').removeClass('active');
-        $(this).addClass('active');
-    });    
-}    
- 
-       
+<script type="text/javascript" src="js/fullpage.js"></script>
 
+<script>  
+if($(window).width() > 1199){
+    var myFullpage = new fullpage('#fullpage', {
+        //Навигация
+        menu: '#left-menu',
+        lockAnchors: false,
+        anchors:['main', 'second', 'third', 'fourth', 'fifth', 'partn', 'footer'],
+        navigationTooltips: ['main', 'second', 'third', 'fourth', 'fifth', 'partn', 'footer'],
+        showActiveTooltip: false,
+        slidesNavigation: false,
+        slidesNavPosition: 'bottom',
+
+        //Скроллинг
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: false,
+        dragAndMove: false,
+        offsetSections: false,
+        resetSliders: false,
+        fadingEffect: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        scrollOverflowReset: false,
+        scrollOverflowOptions: null,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
+        bigSectionsDestination: null,
+
+        //Доступ
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Дизайн
+        controlArrows: true,
+        verticalCentered: true,
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+        responsiveSlides: false,
+        parallax: false,
+        parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+        //Настроить селекторы
+        sectionSelector: '.section',
+
+        lazyLoading: true,
+
+        //события
+        onLeave: function(origin, destination, direction){},
+        afterLoad: function(origin, destination, direction){},
+        afterRender: function(){},
+        afterResize: function(width, height){},
+        afterResponsive: function(isResponsive){},
+        afterSlideLoad: function(section, origin, destination, direction){},
+        onSlideLeave: function(section, origin, destination, direction){}
+    });
+}    
 </script>
-<script>
-$('#left-menu a').click(function(){
-var target = $(this).attr('href');
-$('html, body').animate({scrollTop: $(target).offset().top}, 800);
-return false;
-});     
-</script>
+
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>
