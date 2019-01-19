@@ -628,6 +628,26 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
   .page_about-vid-sl .lSSlideOuter { overflow: visible; max-width: 245px; }
   .page_about-vid-sl .lSSlideWrapper { overflow: visible; } }
 /*page_about*/
+.page_vacs { background: #fff; padding-top: 225px; padding-bottom: 125px; }
+.page_vacs-ttl { font-size: 48px; padding-left: 100px; line-height: 1.29; margin-bottom: 50px; }
+.page_vacs-links { margin-right: 50px; }
+.page_vacs-tab { font-size: 30px; color: #345e94; opacity: 0.5; line-height: 1.29; margin-bottom: 51px; cursor: pointer; }
+.page_vacs-tab:last-child { margin-bottom: 0; }
+.page_vacs-tab.active { opacity: 1; }
+.page_vacs-cont { margin-top: 0; overflow: hidden; height: 0px; }
+.page_vacs-cont.active { height: auto; margin-top: 114px; }
+
+/*page_about*/
+@media (max-width: 1600px) and (min-width: 992px) { .page_vacs2-ttl { padding-left: 50px; } }
+@media (max-width: 991px) and (min-width: 768px) { .page_vacs-ttl { padding-left: 0px; } }
+@media (max-width: 767px) { .page_vacs { padding-top: 125px; padding-bottom: 75px; }
+  .page_vacs-ttl { padding: 0 7px; }
+  .page_vacs .page_vacs-tab { font-size: 20px; margin-bottom: 25px; }
+  .page_vacs .page_vacs-cont { overflow: hidden; }
+  .page_vacs .page_vacs-cont.active { margin-top: 69px; }
+  .page_vacs .page_vacs-cont .lSSlideOuter { max-width: 256px; overflow: visible; padding: 0 !important; }
+  .page_vacs .page_vacs-cont .lSSlideWrapper { overflow: visible; padding: 0 !important; } }
+/*page_about*/
 .page_vacs2 { background: #fff; padding-top: 225px; padding-bottom: 125px; }
 .page_vacs2-ttl { font-size: 48px; padding-left: 100px; line-height: 1.29; margin-bottom: 50px; }
 .page_vacs2-bl { max-width: 512px; margin-left: 100px; margin-bottom: 89px; }
