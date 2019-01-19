@@ -239,7 +239,42 @@
                                        <li><a href="video/background.mp4" class="fancybox"><img src="img/burg2.jpg" alt=""></a></li>
                                    </ul>
                                </div>
-                           </div>   
+                           </div> 
+                           <div class="page_about-nums">
+                               <div class="page_about-nums-ttl">Наши цифры</div>
+                               <div class="row">
+                                   <div class="col-12 col-md-6 col-lg-6">
+                                       <div class="page_about-nums-bl">
+                                           <div class="page_about-nums-bl-img">14</div>
+                                           <div class="page_about-nums-bl-txt">Лет на рынке</div>
+                                       </div>
+                                   </div>
+                                   <div class="col-12 col-md-6 col-lg-6">
+                                       <div class="page_about-nums-bl">
+                                           <div class="page_about-nums-bl-img">62</div>
+                                           <div class="page_about-nums-bl-txt">Проекта</div>
+                                       </div>
+                                   </div>
+                                   <div class="col-12 col-md-6 ">
+                                       <div class="page_about-nums-bl">
+                                           <div class="page_about-nums-bl-img">14</div>
+                                           <div class="page_about-nums-bl-txt">Лет на рынке</div>
+                                       </div>
+                                   </div>
+                                   <div class="col-12 col-md-6 col-lg-6">
+                                       <div class="page_about-nums-bl">
+                                           <div class="page_about-nums-bl-img">14</div>
+                                           <div class="page_about-nums-bl-txt">Лет на рынке</div>
+                                       </div>
+                                   </div>
+                                   <div class="col-12 col-md-6 col-lg-6">
+                                       <div class="page_about-nums-bl">
+                                           <div class="page_about-nums-bl-img">62</div>
+                                           <div class="page_about-nums-bl-txt">Проекта</div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>  
                            <div class="page_about-doc">
                                <div class="page_about-doc-ttl">Документы</div>
                                <div class="page_about-doc-sl">
@@ -384,8 +419,12 @@ $(document).ready(function() {
         responsive : [
         {
             breakpoint:991, 
+                settings: {item:2}
+        },
+        {
+            breakpoint:767, 
                 settings: {item:1}
-        }
+        }  
         ]
 
         });

@@ -688,6 +688,19 @@ if($(window).width() > 1199){
 }    
 </script>
 
+<script>
+$(window).on('scroll resize load', function(){
+    if($(window).width() < 768){
+        if($(window).scrollTop() > $('.partn').offset().top && $(window).scrollTop() < $('.partn').offset().top+$('.partn').height()+$('.partn').innerHeight()){
+            $('header').addClass('color-black');
+        }
+        else {
+            $('header').removeClass('color-black');
+        }
+    }
+});      
+</script>
+
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>
