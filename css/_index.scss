@@ -9,8 +9,10 @@
     &-menu {margin-top: 146px;
         ul {padding: 0;margin: 0;list-style: none;
             li {height: 97px;
-                a {display: block; width: 100%;height: 100%;color: #ffffff80;background: rgba(52, 94, 148, 0); padding: 27px 126px 31px; font-size: 30px;
-                    &:hover, &:focus {background: rgba(52, 94, 148, 0.7);text-decoration: none;color: #fff;}
+                a {display: block; width: 100%;height: 100%;color: #ffffff80;background: rgba(52, 94, 148, 0); padding: 27px 126px 31px; font-size: 30px;position: relative;
+                    &:hover, &:focus {background: rgba(52, 94, 148, 0.7);text-decoration: none;color: #fff;
+                        &:after { content: '+'; position: absolute; right: 126px; top: 50%; margin-top: -25px; }
+                    }
                     sup { font-size: 16px; top: -17px; }
                 }
             }
@@ -30,7 +32,11 @@
     .main{
         &-cont { padding-top: 60px;}
         &-menu { margin-top: 0; 
-            ul li a { padding: 27px 98px 31px; }
+            ul li a { padding: 27px 98px 31px; 
+                &:hover, &:focus {
+                    &:after { }
+                }
+            }
         }
         &-controls { margin-top: 70px; } 
         &-cat { padding: 70px 0px; }
@@ -46,6 +52,9 @@
             ul {
                 li {height: auto; 
                     a {padding: 10px; font-size: 20px; opacity: 0.5;
+                        &:hover, &:focus {
+                            &:after { }
+                        }
                         sup { display: none; }
                     }
                 }

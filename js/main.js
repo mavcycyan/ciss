@@ -34,9 +34,9 @@ $('.btn-clck').click(function(){
 
 /***/
 
-if($(window).width() < 768)
+if($(window).width() < 768){
     $('.fix-menu-cat').appendTo('.fix-menu-forcat'); 
-
+}
 /***/
 
 $('.h-mob-lang button').click(function(){

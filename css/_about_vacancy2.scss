@@ -1,5 +1,5 @@
 /*page_about*/
-.page_about {background: #fff; padding-top: 225px; padding-bottom: 125px;
+.page_vacs2 {background: #fff; padding-top: 225px; padding-bottom: 125px;
     &-ttl { font-size: 48px; padding-left: 100px; line-height: 1.29; margin-bottom: 50px; } 
     &-bl{ max-width: 512px; margin-left: 100px; margin-bottom: 89px;
         &-img {min-height: 328px; width: 100%; background: #ddd;display:block;
@@ -29,7 +29,7 @@
         &-txt { font-size: 20px; margin-top: 25px; } 
         &-rez { display: block; float: left; font-size: 30px; color: #345e94; opacity: 0.5; margin-right: 20px; margin-top: 30px; }
         &.opened { height: auto; 
-            .page_about-burger-ttl{
+            .page_vacs2-burger-ttl{
                 &:after {transform: rotate(-180deg);@include trans(0.3s);}
             }
         }
@@ -37,13 +37,13 @@
 }
 /*page_about*/
 @media(max-width: 1600px) and (min-width: 992px){
-    .page_about {
+    .page_vacs2 {
         &-ttl {padding-left: 50px;}
         &-bl {margin-left: 50px;margin-right: 50px;}
     }
 }
 @media(max-width: 767px){
-    .page_about{padding-top: 125px; padding-bottom: 75px;
+    .page_vacs2{padding-top: 125px; padding-bottom: 75px;
         &-ttl { padding: 0 7px; } 
         &-cont { padding: 50px 7px 0; 
             .col-12 { padding: 0; }

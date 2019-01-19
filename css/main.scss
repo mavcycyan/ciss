@@ -81,8 +81,18 @@ header {position: fixed; top: 0; left: 0; width: 100%;padding: 48px 35px; z-inde
         a {color: #fff; font-weight: 500;}
     }
     &-right {float: right; margin-top: 7px;}
-    &-srch{width: 20px;height: 20px;display: inline-block;background: url('../img/search.svg'); background-size: cover;border: none; cursor: pointer;margin-right: 20px;}    
-    &-user{width: 22px;height: 20px;display: inline-block;background: url('../img/user.svg'); background-size: cover;margin-left: 20px; border: 0;cursor: pointer;}
+    &-srch{width: 20px;height: 20px;display: inline-block;background: url('../img/search.svg'); background-size: 100% auto;border: none; cursor: pointer;margin-right: 20px;
+        &:focus {outline:0; box-shadow:none;}
+        &.opened { background: none!important; 
+            &:before { content: 'X'; color: #fff; }
+        }
+    }    
+    &-user{width: 22px;height: 20px;display: inline-block;background: url('../img/user.svg'); background-size: 100% auto;margin-left: 20px; border: 0;cursor: pointer;
+        &:focus {outline:0; box-shadow:none;}
+        &.opened { background: none!important; 
+            &:before { content: 'X'; color: #fff; }
+        }
+    }
 }
 header {
     &.color-black {
@@ -102,8 +112,8 @@ header {
             &-phn {
                 a {color: #000; }
             }
-            &-srch{background: url('../img/search_black.svg'); }    
-            &-user{background: url('../img/user_black.svg'); }     
+            &-srch{background: url('../img/search_black.svg');background-size: 100% auto; }    
+            &-user{background: url('../img/user_black.svg'); background-size: 100% auto;}     
         }
     }
     &.abs {position: absolute;}
@@ -124,8 +134,8 @@ header {
             &-phn {
                 a {color: #fff; }
             }
-            &-srch{background: url('../img/search.svg'); }    
-            &-user{background: url('../img/user.svg'); }     
+            &-srch{background: url('../img/search.svg'); background-size: 100% auto;}    
+            &-user{background: url('../img/user.svg'); background-size: 100% auto;}     
         }
     }    
 }
@@ -215,6 +225,7 @@ header {
 @import "_news";
 @import "_single_news";
 @import "_services";
+@import "_about"; 
 @import "_about_vacancy2"; 
  
 
