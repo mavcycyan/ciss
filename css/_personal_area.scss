@@ -1,5 +1,15 @@
 /*page_pers*/
 .page_pers{background: #fff; padding-top: 225px; padding-bottom: 125px;
+    &-sub_menu {
+        ul { list-style: none; margin: 0; padding: 0; 
+            li { display: inline-block; margin-bottom: 15px; 
+                a {display: block;padding: 2px 33px 13px;border-bottom: 1px solid transparent;color: #345e9480;
+                    &.active { border-bottom: 1px solid #345e94; color: #345e94; }
+                    &:hover, &:focus {text-decoration: none;}
+                } 
+            } 
+        } 
+    }
     &-left { padding-left: 100px; 
         &-ttl { padding: 10px 0; padding-left: 28px; background: url(../img/user_black.svg)no-repeat 0% 50%; background-size: 15px 14px; } 
         &-menu { margin-top: 167px; 
@@ -13,8 +23,22 @@
             }    
         } 
     }
+    &-middle { margin-top: 167px; 
+        &-menu { margin-top: 17px; 
+            ul { margin: 0; padding: 0; list-style: none; 
+                li {
+                    a { display: block; color: #345e94; opacity: 0.5; font-size: 20px; margin-bottom: 22px; 
+                        &:hover, &:focus { box-shadow: none; outline: 0; } 
+                        &.active { opacity: 1; } 
+                    } 
+                } 
+            } 
+        }                             
+    }    
     &-right {margin-right: 100px;
-        &-cont {}
+        &-cont {
+            &.proj {margin-top: 167px;}
+        }
         &-bl {margin-bottom: 53px; 
             &-input { display: block; width: 100%; border: 0; margin-top: 7px; color: #345e94; font-size: 30px; border-bottom: 1px solid #345e9480; padding-bottom: 7px;  
                 &:focus {box-shadow: none; outline: 0;}
@@ -28,6 +52,9 @@
             }
         } 
         &-doc {margin-bottom: 53px; border-bottom: 1px solid #00000080; padding-bottom: 20px;
+            &-ttl {
+                 span { border-radius: 16px; border: 1px solid #0003; padding: 5px 10px; margin-left: 10px; }
+            }
             &-cont { position: relative; } 
             &-clear { background: none; border: 0; color: #345e94; font-size: 20px; position: absolute; right: 0; top: 50%; margin-top: -16px; }
             &-input { display: block; width: 100%; border: 0; margin-top: 7px; color: #345e94; font-size: 30px; border-bottom: 1px solid #345e9480; padding-bottom: 7px;  
@@ -42,7 +69,25 @@
             &.phone { margin: 65px 0; 
                 .page_pers-right-bl-input { border-bottom: 0; }
             }
-        }         
+        }   
+        &-contacts {margin-bottom: 53px; border-bottom: 1px solid #00000080; padding-bottom: 20px;
+            &-ttl {margin-top: 20px;}
+            &-lbl { color: #345e94; font-size: 30px; display: block; margin-top: 10px; }
+            &-data {margin-top: 20px;
+                span {margin-right: 15px;}
+            }
+        }
+        &-photo {margin-bottom: 33px;
+            &-bl {padding-bottom: 20px;border-bottom: 1px solid #00000080;
+                &-ttl { color: #345e94; font-size: 30px; }
+                &-txt { margin-top: 17px; } 
+            }  
+            &-sl { margin-top: 36px; 
+                .lSSlideOuter { padding: 0!important; } 
+                .lSSlideWrapper { padding: 0; }             
+            } 
+            
+        }
     }
 }
 /*page_pers*/
@@ -64,15 +109,23 @@
 }
 @media(max-width: 767px) {
     .page_pers{padding-top: 127px;
+        &-sub_menu {    margin-top: 35px;overflow-x: auto; max-width: 100%;
+            ul { width: max-content; } 
+        }        
         &-left { padding: 7px;
             &-menu {margin-top: 61px; overflow-x: auto; max-width: 100%;
-                ul { width: 530px;
+                ul { width: max-content;
                     li {display: inline-block; margin-right: 20px;
                         a {font-size: 20px; margin-bottom: 30px;}
                     } 
                 }            
             }
         }
-        &-right {margin: 7px;}
+        &-middle {margin-top: 61px;}
+        &-right {margin: 7px;
+            &-cont {
+                &.proj {margin-top: 61px;}
+            }
+        }
     }                                                            
 }
