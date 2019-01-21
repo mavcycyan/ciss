@@ -1,4 +1,4 @@
-/*page_about*/
+/*page_vacs*/
 .page_vacs {background: #fff; padding-top: 225px; padding-bottom: 125px;
     &-ttl { font-size: 48px; padding-left: 100px; line-height: 1.29; margin-bottom: 50px; } 
     &-links {    margin-right: 50px;}
@@ -20,7 +20,7 @@
         }       
     }
 }
-/*page_about*/
+/*page_vacs*/
 @media(max-width: 1600px) and (min-width: 992px){
     .page_vacs2 {
         &-ttl {padding-left: 50px;}

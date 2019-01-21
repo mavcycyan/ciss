@@ -1,4 +1,4 @@
-/*fix-menu*/
+/*fix-srch*/
 .fix-srch {overflow: auto;width: 100%; height: 100vh; background: #345e94;position: fixed; z-index: 190; padding-top: 132px; padding-bottom: 64px;
     &.hidden {display: none;}
     &-cont {padding-top: 146px;padding-left: 100px;min-height: 100%;}
@@ -27,7 +27,7 @@
     }    
     &-mob { display: none;}
 }
-/*fix-menu*/
+/*fix-srch*/
 @media(max-width: 1600px) and (min-width: 992px){
     .fix-srch {
         &-cont { padding-left: 50px; } 
