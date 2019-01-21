@@ -13,7 +13,8 @@
 	<title>CISS</title> 
 
     <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
-
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" />
+    
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="css/main.css" rel="stylesheet">
 	
@@ -408,7 +409,7 @@ $(document).ready(function() {
         freeMove:false,
         pager:false, 
         onSliderLoad: function() {
-                $('#slider-fifth').removeClass('cS-hidden');
+                $('.slider-docs').removeClass('cS-hidden');
         },
         responsive : [
         {
@@ -425,6 +426,7 @@ $(document).ready(function() {
 });
 </script>
 
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>
 <script type="text/javascript">
 jQuery(document).ready(function($){
 $(".fancybox").fancybox();
