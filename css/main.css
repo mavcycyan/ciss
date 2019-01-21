@@ -772,6 +772,20 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
 .page_pers-right-bl-btn { display: inline-block; width: 49%; border: 0; background: none; margin-top: 20px; color: #000; border-bottom: 1px solid transparent; padding-bottom: 20px; }
 .page_pers-right-bl-btn.active { color: #345e94; border-bottom: 1px solid #345e9480; }
 .page_pers-right-bl-btn:focus { box-shadow: none; outline: 0; }
+.page_pers-right-bl.phone { margin: 65px 0; }
+.page_pers-right-bl.phone .page_pers-right-bl-input { border-bottom: 0; }
+.page_pers-right-doc { margin-bottom: 53px; border-bottom: 1px solid #00000080; padding-bottom: 20px; }
+.page_pers-right-doc-cont { position: relative; }
+.page_pers-right-doc-clear { background: none; border: 0; color: #345e94; font-size: 20px; position: absolute; right: 0; top: 50%; margin-top: -16px; }
+.page_pers-right-doc-input { display: block; width: 100%; border: 0; margin-top: 7px; color: #345e94; font-size: 30px; border-bottom: 1px solid #345e9480; padding-bottom: 7px; }
+.page_pers-right-doc-input:focus { box-shadow: none; outline: 0; }
+.page_pers-right-doc-file { display: none; }
+.page_pers-right-doc-lbl { color: #345e94; font-size: 30px; display: block; margin-top: 10px; }
+.page_pers-right-doc-new { opacity: 0.4; }
+.page_pers-right-doc-btn { display: inline-block; border: 0; background: url("../img/upl.svg") no-repeat 0% 50%; background-size: 19px 16px; margin-top: 44px; color: #000; padding-left: 31px; text-align: left; }
+.page_pers-right-doc-btn:focus { box-shadow: none; outline: 0; }
+.page_pers-right-doc.phone { margin: 65px 0; }
+.page_pers-right-doc.phone .page_pers-right-bl-input { border-bottom: 0; }
 
 /*page_pers*/
 @media (max-width: 1600px) and (min-width: 992px) { .page_pers-left { padding-left: 50px; }

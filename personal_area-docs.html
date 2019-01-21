@@ -201,13 +201,13 @@
                         <div class="page_pers-left-menu">
                             <ul>
                                 <li>
-                                    <a href="personal_area-settings" class="active">Настройки</a>
+                                    <a href="personal_area-settings.html">Настройки</a>
                                 </li>
                                 <li>
                                     <a href="personal_area-req.html">Реквизиты</a>
                                 </li>
                                 <li>
-                                    <a href="personal_area-docs.html">Документы <sup>6</sup></a>
+                                    <a href="personal_area-docs.html" class="active">Документы <sup>6</sup></a>
                                 </li>
                                 <li>
                                     <a href="personal_area-proj.html">Проекты</a>
@@ -219,28 +219,39 @@
                 <div class="col-12 col-md-6 col-lg-5 offset-lg-4">
                     <div class="page_pers-right">
                         <div class="page_pers-right-cont">
-                            <div class="page_pers-right-bl">
-                                <div class="page_pers-right-bl-ttl">Название заказчика</div>
-                                <input type="text" class="page_pers-right-bl-input" placeholder="ООО Название заказчика">
+                            <div class="page_pers-right-doc">
+                                <div class="page_pers-right-doc-ttl">Свидетельство о регистрации юр. лица</div>
+                                <div class="page_pers-right-doc-cont">
+                                    <input type="file" id="file1" class="page_pers-right-doc-file" value="C:\fakepath\svidetelstvo.jpg">
+                                    <label for="file1" class="page_pers-right-doc-lbl">svidetelstvo.jpg</label>
+                                    <button class="page_pers-right-doc-clear" data-cl="file1">x</button>
+                                </div>
+                                <button class="page_pers-right-doc-btn" data-for="file1">Заменить</button>
                             </div>
-                            <div class="page_pers-right-bl">
-                                <div class="page_pers-right-bl-ttl">E-mail</div>
-                                <input type="text" class="page_pers-right-bl-input" placeholder="info@google.com">
+                            <div class="page_pers-right-doc">
+                                <div class="page_pers-right-doc-new">Новый Документ</div>
+                                <input type="file" id="file2" class="page_pers-right-doc-file" value="C:\fakepath\svidetelstvo.jpg">
+                                <button class="page_pers-right-doc-btn" data-for="file2">Добавить</button>
                             </div>
-                            <div class="page_pers-right-bl">
-                                <div class="page_pers-right-bl-ttl">Новый Пароль</div>
-                                <input type="password" class="page_pers-right-bl-input" placeholder="Пароль">
-                            </div>
-                            <div class="page_pers-right-bl">
-                                <div class="page_pers-right-bl-ttl">Повторить Пароль</div>
-                                <input type="password" class="page_pers-right-bl-input" placeholder="Пароль">
-                            </div>
-                            <div class="page_pers-right-bl">
-                                <div class="page_pers-right-bl-ttl">Присылать уведомления на E-mail о состоянии заказа?</div>
-                                <button class="page_pers-right-bl-btn active">Да</button>
-                                <button class="page_pers-right-bl-btn">Нет</button>
-                            </div>
-                        </div>    
+                        </div> 
+                        <script>
+                            var itId;
+                            $('.page_pers-right-doc-file').change(function(){
+                                itId = $(this).attr('id');
+                                $('[for="'+itId+'"]').text($(this)[0].files[0].name);
+                            });
+                            var dataVal;
+                            $('.page_pers-right-doc-btn').on('click', function(){
+                                dataVal = $(this).attr('data-for');
+                                $('#'+dataVal).trigger('click');
+                            });
+                            
+                            $('.page_pers-right-doc-clear').click(function(){
+                                dataVal = $(this).attr('data-cl');
+                                $('#'+dataVal).val('');
+                                $('[for="'+dataVal+'"]').text('');
+                            });
+                        </script>   
                     </div>
                 </div>                  
             </div>                      
