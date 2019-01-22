@@ -142,7 +142,7 @@
            <div class="col-12">
                <div class="fix-srch-mob">
                     <a href="#" class="fix-srch-mob-cat">Каталог <span></span></a>
-                    <a href="#" class="fix-srch-mob-ques">Задать вопрос</a>
+                    <a href="#" class="fix-srch-mob-ques call_us">Задать вопрос</a>
                     <button class="fix-srch-mob-cls srch-clck">X</button>
                </div>
            </div>
@@ -152,7 +152,7 @@
                     <div class="fix-srch-ttl"><input type="text" placeholder="Ваш запрос"></div>
                     <div class="fix-srch-btm_txt">Найдено: 2</div>
                     <a href="#" class="fix-srch-cat">Каталог <span></span></a>
-                    <a href="#" class="fix-srch-ques">Задать вопрос</a>
+                    <a href="#" class="fix-srch-ques call_us">Задать вопрос</a>
                </div>
             </div>
             <div class="col-12 col-lg-6">
@@ -201,6 +201,38 @@
         </div>
     </div>
 </div>   
+<div style="display:none;">
+    <div id="modal_call_us" class="modal_call_us" style="display: block;">
+        <div class="clearfix"></div>
+        <div class="container">
+            <form action="" method="" class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="modal_call_us-bl left">
+                        <label>Имя</label> 
+                        <input name="name" type="text" placeholder="Фамилия Имя" required />
+                     </div>   
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="modal_call_us-bl right">
+                        <label></label> 
+                        <input name="ques" type="text" placeholder="Ваш вопрос" required /> 
+                     </div>             
+                </div>
+                <div class="col-12">
+                    <div class="modal_call_us-bl left">
+                        <label></label>
+                        <input name="mail" type="text" placeholder="info@mail.com" required />   
+                     </div>              
+                </div>
+                <div class="col-12">
+                    <div class="modal_call_us-bl left">
+                        <button type="submit">Отправить</button>  
+                     </div>
+                </div>                
+            </form>
+        </div>			
+    </div>    
+</div>
     
 <div class="wrapper" id="fullpage">
     <div class="main section active">
@@ -280,7 +312,7 @@
                        </div>  
                        <div class="second-last-btm">
                            <a href="catalog.html" class="second-last-btm-cat">Каталог <span></span></a>
-                           <a href="#" class="second-last-btm-ques">Задать вопрос</a>
+                           <a href="#" class="second-last-btm-ques call_us">Задать вопрос</a>
                        </div>                    
                    </div>
                 </div>                
@@ -296,7 +328,7 @@
                         <div class="third-txt">Совместный или самостоятельный интегрированный<br>менеджмент проекта</div>
                         <div class="third-btm">
                             <a href="catalog.html" class="third-btm-cat">Каталог <span></span></a>
-                            <a href="#" class="third-btm-ques">Задать вопрос</a>
+                            <a href="#" class="third-btm-ques call_us">Задать вопрос</a>
                         </div>
                    </div>
                 </div>
@@ -701,6 +733,7 @@ $(window).on('scroll resize load', function(){
 });      
 </script>
 
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>

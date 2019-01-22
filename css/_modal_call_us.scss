@@ -1,0 +1,28 @@
+/*page_about*/
+.modal_call_us {padding-top: 225px;
+    &_wp { min-height: 100vh; background: #345e94;
+        .fancybox-close { position: absolute; right: 15%; display: block; top: 185px; color: #fff; 
+            &:after { content: 'x'; font-size: 30px; }
+        }  
+        .fancybox-skin { min-height: 100vh; } 
+        .fancybox-outer { min-height: 100vh; } 
+        .fancybox-inner { min-height: 100vh; }        
+    }
+    &-bl {max-width: 612px;margin-bottom: 160px;
+        label { height: 26px; color: #fff; display: block; margin: 0; } 
+        input { border: 0; border-bottom: 1px solid #ffffff80; font-size: 32px; color: #fff; background: transparent; padding: 0; padding-bottom: 9px; margin-top: 9px; display: block; width: 100%; }
+        &.left { margin-left: 100px; } 
+        &.right { margin-right: 100px; } 
+        button { background: none; border: 0; color: #fff; font-size: 30px; } 
+    }
+}
+/*page_about*/
+
+@media(max-width: 767px){
+    .modal_call_us {    padding-top: 125px;
+        &-bl {margin: 0 7px 60px!important;}
+        &_wp { 
+                .fancybox-close { top: 85px;}        
+        }        
+    }
+}

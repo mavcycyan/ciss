@@ -10,6 +10,18 @@ $(window).on('scroll resize load', function(){
 
 /***/
 
+jQuery(document).ready(function($){	
+    $(".call_us").fancybox({ 
+        href: '#modal_call_us', 
+        wrapCSS: 'modal_call_us_wp',
+        minWidth: '100%',
+        margin: [0, 0, 0, 0],
+        padding: [0, 0, 0, 0],
+        autoScale: true
+    });
+});
+/***/
+
 $('.btn-clck').click(function(){
     if($('.fix-menu').hasClass('hidden')){
         $('.fix-menu').removeClass('hidden');

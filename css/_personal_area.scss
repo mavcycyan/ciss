@@ -23,7 +23,7 @@
             }    
         } 
     }
-    &-middle { margin-top: 167px; 
+    &-middle { margin-top: 167px;  
         &-menu { margin-top: 17px; 
             ul { margin: 0; padding: 0; list-style: none; 
                 li {
@@ -35,6 +35,23 @@
             } 
         }                             
     }    
+    &-graph { margin-top: 167px; 
+        &-menu { padding: 49px 0 5px; list-style: none;margin: 0; position: relative; overflow: hidden;
+            &:before {content: ''; width: 1px; background: #345e94; height: 100%; position: absolute; display: block; bottom: 0; left: 7px; margin: 0 0; opacity: 0.5;}
+            li {position: relative; height: 62px;
+                a { display: block; width: 15px; height: 15px; background: transparent; border: 1px solid transparent; border-radius: 50%; 
+                    &:before {content: '';width: 5px;height: 5px;background: #345e94;border-radius: 50%;display: block; margin: 4px;}
+                    span {position: absolute; top: -5px; color: #345e94; left: 24px;}
+                }
+                &.active {
+                    &:before { content: ''; width: 1px; background: #345e94; height: 100vh; position: absolute; display: block; bottom: 61px; left: 7px; margin: 0 0; }
+                    a {background: #fff; border: 1px solid #345e94;
+                        &:after {content: ''; display: block; width: 10px; height: 18px; background: url('../img/graph_menu.png'); left: 0; right: 0; margin: 0 auto;}    
+                    }
+                }            
+            }
+        }        
+    }     
     &-right {margin-right: 100px;
         &-cont {
             &.proj {margin-top: 167px;}
@@ -75,6 +92,9 @@
             &-lbl { color: #345e94; font-size: 30px; display: block; margin-top: 10px; }
             &-data {margin-top: 20px;
                 span {margin-right: 15px;}
+            }
+            &-see { color: #345e94; opacity: 0.5; 
+                &:hover, &:focus { text-decoration: none; opacity: 1; color: #345e94; }
             }
         }
         &-photo {margin-bottom: 33px;
@@ -122,6 +142,7 @@
             }
         }
         &-middle {margin-top: 61px;}
+        &-graph { margin-top: 0;  display: none;}
         &-right {margin: 7px;
             &-cont {
                 &.proj {margin-top: 61px;}
