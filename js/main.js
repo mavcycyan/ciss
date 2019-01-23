@@ -24,6 +24,15 @@ jQuery(document).ready(function($){
 
 $('.btn-clck').click(function(){
     if($('.fix-menu').hasClass('hidden')){
+        /***/
+        $('.fix-srch').addClass('hidden');
+        $('.srch-clck').removeClass('opened');
+        $('header').removeClass('color-white');
+        /***/
+        $('.fix-auth').addClass('hidden');
+        $('.auth-clck').removeClass('opened');
+        $('header').removeClass('color-white');
+        /***/
         $('.fix-menu').removeClass('hidden');
         $(this).addClass('opened');
         $('header').addClass('color-white');
@@ -59,6 +68,15 @@ $('.h-mob-lang button').click(function(){
 
 $('.srch-clck').click(function(){
     if($('.fix-srch').hasClass('hidden')){
+        /***/
+        $('.fix-menu').addClass('hidden');
+        $('.btn-clck').removeClass('opened');
+        $('header').removeClass('color-white');
+        /***/
+        $('.fix-auth').addClass('hidden');
+        $('.auth-clck').removeClass('opened');
+        $('header').removeClass('color-white');
+        /***/
         $('.fix-srch').removeClass('hidden');
         $(this).addClass('opened');
         $('header').addClass('color-white');
@@ -74,6 +92,15 @@ $('.srch-clck').click(function(){
 
 $('.auth-clck').click(function(){
     if($('.fix-auth').hasClass('hidden')){
+        /***/
+        $('.fix-menu').addClass('hidden');
+        $('.btn-clck').removeClass('opened');
+        $('header').removeClass('color-white');
+        /***/
+        $('.fix-srch').addClass('hidden');
+        $('.srch-clck').removeClass('opened');
+        $('header').removeClass('color-white');
+        /***/
         $('.fix-auth').removeClass('hidden');
         $(this).addClass('opened');
         $('header').addClass('color-white');
