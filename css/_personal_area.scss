@@ -59,6 +59,10 @@
         &-bl {margin-bottom: 53px; 
             &-input { display: block; width: 100%; border: 0; margin-top: 7px; color: #345e94; font-size: 30px; border-bottom: 1px solid #345e9480; padding-bottom: 7px;  
                 &:focus {box-shadow: none; outline: 0;}
+                &::-webkit-input-placeholder {color:#345e94;opacity: 0.5;}
+                &::-moz-placeholder          {color:#345e94;opacity: 0.5;}
+                &:-moz-placeholder           {color:#345e94;opacity: 0.5;}
+                &:-ms-input-placeholder      {color:#345e94;opacity: 0.5;}                
             }
             &-btn { display: inline-block; width: 49%; border: 0; background: none; margin-top: 20px; color: #000; border-bottom: 1px solid transparent; padding-bottom: 20px; 
                 &.active {color: #345e94; border-bottom: 1px solid #345e9480;}
@@ -76,9 +80,13 @@
             &-clear { background: none; border: 0; color: #345e94; font-size: 20px; position: absolute; right: 0; top: 50%; margin-top: -16px; }
             &-input { display: block; width: 100%; border: 0; margin-top: 7px; color: #345e94; font-size: 30px; border-bottom: 1px solid #345e9480; padding-bottom: 7px;  
                 &:focus {box-shadow: none; outline: 0;}
+                &::-webkit-input-placeholder {color:#345e94;opacity: 0.5;}
+                &::-moz-placeholder          {color:#345e94;opacity: 0.5;}
+                &:-moz-placeholder           {color:#345e94;opacity: 0.5;}
+                &:-ms-input-placeholder      {color:#345e94;opacity: 0.5;}                
             }
             &-file { display: none; }
-            &-lbl { color: #345e94; font-size: 30px; display: block; margin-top: 10px; }
+            &-lbl { color: #345e94; font-size: 30px; display: block; margin-top: 10px; text-decoration: underline; }
             &-new { opacity: 0.4; }
             &-btn { display: inline-block; border: 0; background: url('../img/upl.svg')no-repeat 0% 50%; background-size: 19px 16px; margin-top: 44px; color: #000; padding-left: 31px; text-align: left;
                 &:focus {box-shadow: none; outline: 0;}

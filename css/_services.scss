@@ -1,8 +1,8 @@
 /*page_services*/
 .page_services {background: #fff; padding-top: 225px; padding-bottom: 125px;
     &-ttl { font-size: 48px; padding-left: 100px; line-height: 1.29; margin-bottom: 50px; } 
-    &-bl{ max-width: 512px; margin-left: 100px; padding-bottom: 89px; position: relative; padding-left: 119px; border-bottom: 1px solid #37373780;
-        &-num { position: absolute; top: 0; left: 0; font-size: 30px; color: #345e94;width: 70px; height: 50px; background: url(../img/num2.svg); background-size: 100% 100%; text-align: center; padding: 0px 10px; }
+    &-bl{ max-width: 512px; margin-left: 100px; padding-bottom: 89px; position: relative; padding-left: 119px; border-bottom: 1px solid #37373733;
+        &-num { position: absolute; top: 0; left: 0; font-size: 26px; color: #345e94; width: 70px; height: 50px; background: url(../img/num2.svg), no-repeat 50% 100px; background-size: 100% 100%; text-align: center; padding: 0px 10px; line-height: 1.1;}
         &-img {min-height: 328px; width: 100%; background: #ddd;display:block;
             &:hover, &:focus {text-decoration:none;color:#000;}
         }
@@ -23,7 +23,7 @@
         }
     }
     .row.blocks { position: relative; 
-        &:after { content: ''; width: 1px; position: absolute; height: 80%; background: #37373780; left: 0; right: 0; margin: 0 auto; top: 10%; }
+        &:after { content: ''; width: 1px; position: absolute; height: 80%; background: #37373733; left: 0; right: 0; margin: 0 auto; top: 10%; }
         .col-12 {
             &:last-child, &:nth-last-child(2) {
                 .page_services-bl {border-bottom: none;}

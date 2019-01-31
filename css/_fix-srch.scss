@@ -5,6 +5,10 @@
     &-ttl {font-size: 48px;line-height: 1.29;color: #fff;
         input[type="text"] { background: none; border: 0; color: #fff; 
             &:focus { border: none; box-shadow: none; outline: 0; } 
+            &::-webkit-input-placeholder {color:#fff;}
+            &::-moz-placeholder          {color:#fff;}
+            &:-moz-placeholder           {color:#fff;}
+            &:-ms-input-placeholder      {color:#fff;}
         } 
     }
     &-top_txt { line-height: 1.46; color: #fff; margin-bottom: 25px; opacity:0.5;} 

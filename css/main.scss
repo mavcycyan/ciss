@@ -34,7 +34,9 @@ img { max-width: 100%; height:auto; }
     .container {max-width: 1484px;}
 }
 
-.video-back {position: fixed; z-index: -1; width: 100%; height: 100%; left: 0; top: 0;}
+.video-back {position: fixed; z-index: -1; width: 100%; height: 100%; left: 0; top: 0;
+    #video-back { min-width: 100%; min-height: 100%; width: auto; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+}
 
 /*header*/
 header {position: fixed; top: 0; left: 0; width: 100%;padding: 48px 35px; z-index: 200;
@@ -84,13 +86,13 @@ header {position: fixed; top: 0; left: 0; width: 100%;padding: 48px 35px; z-inde
     &-srch{width: 20px;height: 20px;display: inline-block;background: url('../img/search.svg'); background-size: 100% auto;border: none; cursor: pointer;margin-right: 20px;
         &:focus {outline:0; box-shadow:none;}
         &.opened { background: none!important; 
-            &:before { content: 'X'; color: #fff; }
+            &:before { content: '';background: url('../img/cross.svg'); background-size: 19px 19px;width: 19px; height: 19px; display: block; color: #fff; }
         }
     }    
     &-user{width: 22px;height: 20px;display: inline-block;background: url('../img/user.svg'); background-size: 100% auto;margin-left: 20px; border: 0;cursor: pointer;
         &:focus {outline:0; box-shadow:none;}
         &.opened { background: none!important; 
-            &:before { content: 'X'; color: #fff; }
+            &:before { content: '';background: url('../img/cross.svg'); background-size: 19px 19px;width: 19px; height: 19px; display: block; color: #fff; }
         }
     }
 }

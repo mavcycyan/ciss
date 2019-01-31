@@ -34,7 +34,7 @@
 <body>
 
 <div class="video-back">
-    <video src="video/background.mp4" autoplay loop></video>
+    <video src="video/background.mp4" autoplay loop muted="muted" id="video-back"></video>
 </div>
 
 <header>
@@ -650,6 +650,18 @@ $('.fourth-bl-ttl').click(function(){
 <script type="text/javascript" src="js/fullpage.js"></script>
 
 <script>  
+    function hideShowSideMenu(){
+        if($('body').attr('class') == 'fp-viewing-partn' || $('body').attr('class') == 'fp-viewing-footer') {
+            $('#left-menu').css('opacity', '0');
+            $('#left-menu').css('z-index', '-90');
+        }
+        else {
+            $('#left-menu').css('opacity', '1');
+            $('#left-menu').css('z-index', '205');
+        }
+    
+    }
+    
 if($(window).width() > 1199){
     var myFullpage = new fullpage('#fullpage', {
         //Навигация
@@ -710,7 +722,9 @@ if($(window).width() > 1199){
 
         //события
         onLeave: function(origin, destination, direction){},
-        afterLoad: function(origin, destination, direction){},
+        afterLoad: function(origin, destination, direction){
+            hideShowSideMenu();
+        },
         afterRender: function(){},
         afterResize: function(width, height){},
         afterResponsive: function(isResponsive){},
