@@ -6,11 +6,11 @@
         &:last-child { margin-bottom: 0; } 
         &.active { opacity: 1; } 
     } 
-    &-cont { margin-top: 0; overflow: hidden; height: 0px; 
+    &-cont { margin-top: 0; overflow: hidden; height: 0px; padding-left: 80px; padding-right: 80px;
         &.active { height: auto;margin-top: 114px; }
     }
     .slider-docs{
-        &-bl { display: block; max-width: 256px; margin: 0 auto; color: #000; position: relative;
+        &-bl { display: block; max-width: 256px; margin: 0 0; color: #000; position: relative;
             &-img { display: block; overflow: hidden; border-radius: 8px; box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.1); } 
             &-ttl { font-size: 30px; margin-top: 35px; display: block; } 
             &-txt { display: block; margin-top: 35px; opacity: 0.5;} 
@@ -37,7 +37,7 @@
             &:before { content: ''; position: absolute; display: block; width: 12px; height: 6px; background: url('../img/arr-mob.svg'); background-size: 12px 6px; right: 0; top: 50%; margin-top: -3px; }
         }  
         .page_vacs-tab { font-size: 20px; margin-bottom: 25px; } 
-        .page_vacs-cont { overflow: hidden; 
+        .page_vacs-cont { overflow: hidden; padding: 0;
             &.active {margin-top: 69px;}
             .lSSlideOuter { max-width: 256px; overflow: visible; padding: 0!important; } 
             .lSSlideWrapper { overflow: visible; padding: 0!important; }

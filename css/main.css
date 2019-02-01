@@ -258,6 +258,11 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
   .main-mob { position: absolute; bottom: 32px; right: 22px; display: block; }
   .main-mob-srch { width: 20px; height: 20px; display: inline-block; background: url("../img/search.svg"); background-size: cover; border: none; cursor: pointer; margin-right: 20px; }
   .main-mob-user { width: 22px; height: 20px; display: inline-block; background: url("../img/user.svg"); background-size: cover; margin-left: 20px; border: 0; cursor: pointer; } }
+@media (max-width: 1920px) and (min-width: 992px) { .main { padding: 0; min-height: auto; }
+  .main-cont { padding-top: 8vh; }
+  .main-menu { margin-top: 8vh; }
+  .main-controls { margin-top: 4vh; } }
+@media (max-width: 1600px) and (min-width: 1200px) { .main { padding: 0px 100px; } }
 /*second*/
 .second { background: rgba(0, 0, 0, 0.4); }
 .second-bl { border-bottom: 1px solid #fff; padding-bottom: 125px; }
@@ -294,6 +299,16 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
   .second-last-bl { margin: 0 4px; }
   .second-last-btm-cat { margin-top: 55px; font-size: 20px; }
   .second-last-btm-ques { margin-top: 55px; font-size: 20px; } }
+@media (max-width: 1920px) and (min-width: 992px) { .second-bl { padding-bottom: 9vh; } }
+@media (max-width: 1600px) and (min-width: 1200px) { .second { padding: 0 100px; }
+  .second-bl { padding-bottom: 5vh; }
+  .second-bl-txt { margin-top: 3vh; }
+  .second-bl-ico { margin-top: 5vh; }
+  .second-cont { padding-top: 57px; }
+  .second-last { padding-left: 75px; padding-right: 128px; }
+  .second-last-bl-txt { margin-top: 14px; }
+  .second-last-btm-cat { margin-top: 40px; font-size: 26px; }
+  .second-last-btm-ques.call_us { margin-top: 40px; font-size: 26px; } }
 /*third*/
 .third { background: rgba(0, 0, 0, 0.4); }
 .third-cont { padding-top: 146px; padding-left: 100px; margin-top: 276px; }
@@ -333,6 +348,12 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
   .third-right-bl { margin-bottom: 56px; }
   .third-btm-cat { margin-top: 55px; font-size: 20px; }
   .third-btm-ques { margin-top: 55px; font-size: 20px; float: right; } }
+@media (max-width: 1920px) and (min-width: 992px) { .third-right { padding: 16vh 128px; min-height: 100vh; } }
+@media (max-width: 1600px) and (min-width: 992px) { .third { padding: 0 100px; }
+  .third-cont { margin-top: 4vh; }
+  .third-right { padding: 16vh 80px; }
+  .third-right-txt { margin-top: 3vh; }
+  .third-right-bl { margin-bottom: 7vh; } }
 /*fourth*/
 .fourth { background: rgba(0, 0, 0, 0.4); padding-bottom: 168px; padding-top: 184px; }
 .fourth-cont { padding-top: 90px; padding-left: 100px; padding-right: 128px; padding-bottom: 90px; }
@@ -357,6 +378,10 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
 @media (max-width: 991px) and (min-width: 768px) { .fourth { padding-top: 40px; padding-bottom: 40px; } }
 @media (max-width: 767px) { .fourth { padding: 60px 0; }
   .fourth-cont { padding: 28px 7px; } }
+@media (max-width: 1600px) and (min-width: 992px) { .fourth { padding: 100px; }
+  .fourth-text { margin-top: 5vh; }
+  .fourth-news-txt { margin-top: 2vh; }
+  .fourth-cont { padding-top: 6vh; padding-bottom: 6vh; } }
 /*fifth*/
 .fifth { background: #345e94; padding-top: 164px; padding-bottom: 84px; }
 .fifth-cont { padding: 0 100px; }
@@ -404,6 +429,12 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
   .fifth-sl { margin-top: 57px; }
   .fifth-sl-txt { font-size: 13px; width: 79%; margin: 0 auto; }
   .fifth-sl .lSAction { top: 65px; } }
+@media (max-width: 1920px) and (min-width: 992px) { .fifth { padding-top: 2vh; }
+  .fifth-sl { margin-top: 8vh; } }
+@media (max-width: 1600px) and (min-width: 992px) { .fifth { padding: 0 100px; }
+  .fifth-bl-num { margin-top: 15px; }
+  .fifth-bl.big .fifth-bl-num { width: 170px; height: 59px; font-size: 30px; padding: 0; margin-top: 15px; }
+  .fifth-sl-bl { padding: 3vh 0; } }
 /*partn*/
 .partn { background: #fff; padding: 128px 0 69px; }
 .partn-ttl { font-size: 30px; text-align: center; }
@@ -437,14 +468,6 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
 .left-menu li.active a { background: #a4a2ab; border: 1px solid #fff; }
 .left-menu li.active a:after { content: ''; display: block; width: 10px; height: 18px; background: url("../img/l_menu.png"); left: 0; right: 0; margin: 0 auto; }
 
-@media (max-width: 1920px) and (min-width: 992px) { .main { padding: 0; min-height: auto; }
-  .main-cont { padding-top: 8vh; }
-  .main-menu { margin-top: 8vh; }
-  .main-controls { margin-top: 4vh; }
-  .second-bl { padding-bottom: 9vh; }
-  .third-right { padding: 16vh 128px; min-height: 100vh; }
-  .fifth { padding-top: 2vh; }
-  .fifth-sl { margin-top: 8vh; } }
 @media (max-width: 1600px) and (min-width: 992px) { .left-menu { left: 1%; } }
 @media (max-width: 1199px) { .left-menu { display: none; } }
 /*page_catalog*/
@@ -715,9 +738,9 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
 .page_vacs-tab { font-size: 30px; color: #345e94; opacity: 0.5; line-height: 1.29; margin-bottom: 51px; cursor: pointer; }
 .page_vacs-tab:last-child { margin-bottom: 0; }
 .page_vacs-tab.active { opacity: 1; }
-.page_vacs-cont { margin-top: 0; overflow: hidden; height: 0px; }
+.page_vacs-cont { margin-top: 0; overflow: hidden; height: 0px; padding-left: 80px; padding-right: 80px; }
 .page_vacs-cont.active { height: auto; margin-top: 114px; }
-.page_vacs .slider-docs-bl { display: block; max-width: 256px; margin: 0 auto; color: #000; position: relative; }
+.page_vacs .slider-docs-bl { display: block; max-width: 256px; margin: 0 0; color: #000; position: relative; }
 .page_vacs .slider-docs-bl-img { display: block; overflow: hidden; border-radius: 8px; box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.1); }
 .page_vacs .slider-docs-bl-ttl { font-size: 30px; margin-top: 35px; display: block; }
 .page_vacs .slider-docs-bl-txt { display: block; margin-top: 35px; opacity: 0.5; }
@@ -731,7 +754,7 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
   .page_vacs-ttl { padding: 0 7px; font-size: 30px; position: relative; }
   .page_vacs-ttl:before { content: ''; position: absolute; display: block; width: 12px; height: 6px; background: url("../img/arr-mob.svg"); background-size: 12px 6px; right: 0; top: 50%; margin-top: -3px; }
   .page_vacs .page_vacs-tab { font-size: 20px; margin-bottom: 25px; }
-  .page_vacs .page_vacs-cont { overflow: hidden; }
+  .page_vacs .page_vacs-cont { overflow: hidden; padding: 0; }
   .page_vacs .page_vacs-cont.active { margin-top: 69px; }
   .page_vacs .page_vacs-cont .lSSlideOuter { max-width: 256px; overflow: visible; padding: 0 !important; }
   .page_vacs .page_vacs-cont .lSSlideWrapper { overflow: visible; padding: 0 !important; }

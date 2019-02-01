@@ -114,6 +114,3 @@ $('.auth-clck').click(function(){
 
 /***/
 
-$("#video-back")[0].play();
-
-/***/
