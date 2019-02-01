@@ -39,11 +39,15 @@
 
 <header>
    <div class="container-fluid">
+       <a href="index.html" class="h-logo">CISS</a>
+       <div class="h-right">
+           <button class="h-srch srch-clck"></button>
+           <button class="h-user auth-clck"></button>
+       </div>
+   </div>
+   <div class="container">
        <div class="row">
-           <div class="col-12 col-md-2 col-lg-2">
-               <a href="index.html" class="h-logo">CISS</a>
-           </div>
-           <div class="col-12 col-md-2 col-lg-2 col-xl-3">
+           <div class="col-12 col-md-2 col-lg-6">
                <button class="h-btn btn-clck">
                    <span></span>
                    <span></span>
@@ -51,22 +55,16 @@
                    <span class="hlp"></span>                    
                </button>
            </div>
-           <div class="col-12 col-md-2 col-lg-2 col-xl-1">
+           <div class="col-12 col-md-2 col-lg-3">
                <div class="h-lang">
                    <span class="active">En</span>
                    <a href="#">漢語</a>
                </div>
            </div>
-           <div class="col-12 col-md-4 col-lg-4">
+           <div class="col-12 col-md-4 col-lg-3">
               <div class="h-phn">
                   <a href="tel:74959262880">+7 (495) 926-28-80</a>
               </div>
-           </div>
-           <div class="col-12 col-md-2 col-lg-2">
-               <div class="h-right">
-                   <button class="h-srch srch-clck"></button>
-                   <button class="h-user auth-clck"></button>
-               </div>
            </div>
        </div>
    </div>
@@ -104,6 +102,7 @@
 	<li data-menuanchor="partn"><a href="#partn"></a></li>
 	<li data-menuanchor="footer"><a href="#footer"></a></li>
 </ul>
+
 <div class="fix-menu hidden">
     <div class="container">
         <div class="row">
@@ -142,7 +141,7 @@
            <div class="col-12">
                <div class="fix-srch-mob">
                     <a href="#" class="fix-srch-mob-cat">Каталог <span></span></a>
-                    <a href="#" class="fix-srch-mob-ques call_us">Задать вопрос</a>
+                    <a href="#" class="fix-srch-mob-ques">Задать вопрос</a>
                     <button class="fix-srch-mob-cls srch-clck">X</button>
                </div>
            </div>
@@ -152,7 +151,7 @@
                     <div class="fix-srch-ttl"><input type="text" placeholder="Ваш запрос"></div>
                     <div class="fix-srch-btm_txt">Найдено: 2</div>
                     <a href="#" class="fix-srch-cat">Каталог <span></span></a>
-                    <a href="#" class="fix-srch-ques call_us">Задать вопрос</a>
+                    <a href="#" class="fix-srch-ques">Задать вопрос</a>
                </div>
             </div>
             <div class="col-12 col-lg-6">
@@ -200,7 +199,7 @@
             </div>
         </div>
     </div>
-</div>   
+</div>
 <div style="display:none;">
     <div id="modal_call_us" class="modal_call_us" style="display: block;">
         <div class="clearfix"></div>
@@ -232,9 +231,9 @@
             </form>
         </div>			
     </div>    
-</div>
+</div>    
     
-<div class="wrapper" id="fullpage">
+<div class="wrapper main-page" id="fullpage">
     <div class="main section active">
         <div class="container">
             <div class="row">
@@ -661,6 +660,15 @@ $('.fourth-bl-ttl').click(function(){
         }
     
     }
+    function hideShowTopMenu(){
+        if($('body').attr('class') == 'fp-viewing-main') {
+            $('header').removeClass('fixed');
+        }
+        else {
+            $('header').addClass('fixed');
+        }
+    
+    }    
     
 if($(window).width() > 1199){
     var myFullpage = new fullpage('#fullpage', {
@@ -724,6 +732,7 @@ if($(window).width() > 1199){
         onLeave: function(origin, destination, direction){},
         afterLoad: function(origin, destination, direction){
             hideShowSideMenu();
+            hideShowTopMenu();
         },
         afterRender: function(){},
         afterResize: function(width, height){},

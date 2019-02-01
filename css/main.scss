@@ -31,8 +31,10 @@ body {font-family: 'IBM Plex Sans', sans-serif; font-size: 16px;font-weight: 500
 img { max-width: 100%; height:auto; }
 
 @media(min-width: 1200px){
-    .container {max-width: 1484px;}
+    .container { max-width: 68vw;}
+    .main-page .container { max-width: 79vw;}
 }
+.container-fluid {position: relative;}
 
 .video-back {position: fixed; z-index: -1; width: 100%; height: 100%; left: 0; top: 0;
     #video-back { min-width: 100%; min-height: 100%; width: auto; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
@@ -50,7 +52,7 @@ header {position: fixed; top: 0; left: 0; width: 100%;padding: 48px 35px; z-inde
 }
 .h { 
     &-mob {display: none;}
-    &-logo {font-family: 'Chakra Petch', sans-serif;font-size: 24px;font-weight: 700;color: #fff; 
+    &-logo {font-family: 'Chakra Petch', sans-serif;font-size: 24px;font-weight: 700;color: #fff; position: absolute; left: 0; top: 0;
         &:hover, &:focus {color: #fff;text-decoration: none;}
     }
     &-btn { width: 64px; height: 8px; background: none; border: none; cursor: pointer; margin-top: 13px;position: relative;
@@ -82,7 +84,7 @@ header {position: fixed; top: 0; left: 0; width: 100%;padding: 48px 35px; z-inde
     &-phn {text-align: center; margin-top: 5px;
         a {color: #fff; font-weight: 500;}
     }
-    &-right {float: right; margin-top: 7px;}
+    &-right {float: right; margin-top: 7px;position: absolute; right: 0; top: 0;}
     &-srch{width: 20px;height: 20px;display: inline-block;background: url('../img/search.svg'); background-size: 100% auto;border: none; cursor: pointer;margin-right: 20px;
         &:focus {outline:0; box-shadow:none;}
         &.opened { background: none!important; 
@@ -234,7 +236,9 @@ header {
 @import "_personal_area"; 
 @import "_modal_call_us"; 
  
-
+.btn-back { display: block; width: 32px; height: 32px; position: absolute; background: url('../img/arr-r.svg'); background-size: contain; top: 230px; left: 40px; 
+    &_white { display: block; width: 32px; height: 32px; position: absolute; background: url('../img/arr-rw.svg'); background-size: contain; top: 230px; left: 40px; }
+}
 /*footer*/
 footer { padding: 48px 35px; background: #345e94;} 
 .f {
@@ -247,7 +251,7 @@ footer { padding: 48px 35px; background: #345e94;}
     } 
     &-sep {width: 100%;border-bottom: 1px solid #fff; opacity: 0.4; margin-top: 48px;}
     &-cont {margin: 48px auto 0;max-width: 1310px;} 
-    &-ttl { font-size: 20px; color: #fff; margin-bottom: 61px; } 
+    &-ttl { font-size: 20px; color: #fff; margin-bottom: 3vw; } 
     &-txt { margin-bottom: 37px; display: block; max-width: 242px; color: #fff; opacity: 0.5; 
         &:hover, &:focus { opacity: 1; text-decoration: none; color: #fff; }
     }
@@ -257,7 +261,7 @@ footer { padding: 48px 35px; background: #345e94;}
         }
     }
     &-links { text-align: right; 
-        a { color: #fff; }
+        a { color: #fff;font-size: 1vw; }
     }
     &-btm { text-align: justify; text-align: justify; -moz-text-align-last: justify; -webkit-text-align-last: justify; text-align-last: justify; margin-top: 48px; 
         a, span { display: inline-block; color: #fff; opacity: 0.5; 

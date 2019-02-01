@@ -35,11 +35,15 @@
 
 <header class="color-black abs">
    <div class="container-fluid">
+       <a href="index.html" class="h-logo">CISS</a>
+       <div class="h-right">
+           <button class="h-srch srch-clck"></button>
+           <button class="h-user auth-clck"></button>
+       </div>
+   </div>
+   <div class="container">
        <div class="row">
-           <div class="col-12 col-md-2 col-lg-2">
-               <a href="index.html" class="h-logo">CISS</a>
-           </div>
-           <div class="col-12 col-md-2 col-lg-2 col-xl-3">
+           <div class="col-12 col-md-2 col-lg-6">
                <button class="h-btn btn-clck">
                    <span></span>
                    <span></span>
@@ -47,22 +51,16 @@
                    <span class="hlp"></span>                    
                </button>
            </div>
-           <div class="col-12 col-md-2 col-lg-2 col-xl-1">
+           <div class="col-12 col-md-2 col-lg-3">
                <div class="h-lang">
                    <span class="active">En</span>
                    <a href="#">漢語</a>
                </div>
            </div>
-           <div class="col-12 col-md-4 col-lg-4">
+           <div class="col-12 col-md-4 col-lg-3">
               <div class="h-phn">
                   <a href="tel:74959262880">+7 (495) 926-28-80</a>
               </div>
-           </div>
-           <div class="col-12 col-md-2 col-lg-2">
-               <div class="h-right">
-                   <button class="h-srch srch-clck"></button>
-                   <button class="h-user auth-clck"></button>
-               </div>
            </div>
        </div>
    </div>
@@ -90,6 +88,8 @@
        </div>       
    </div>
 </header>
+
+<a href="#" class="btn-back"></a>
 
 <div class="fix-menu hidden">
     <div class="container">
@@ -122,6 +122,7 @@
             </div>
         </div>
     </div>
+    <a href="#" class="btn-back_white"></a>
 </div>
 <div class="fix-srch hidden">
     <div class="container">
@@ -158,6 +159,7 @@
             </div>
         </div>
     </div>
+    <a href="#" class="btn-back_white"></a>
 </div>
 <div class="fix-auth hidden">
     <div class="container">
@@ -187,6 +189,7 @@
             </div>
         </div>
     </div>
+    <a href="#" class="btn-back_white"></a>
 </div>
 <div style="display:none;">
     <div id="modal_call_us" class="modal_call_us" style="display: block;">
@@ -219,7 +222,7 @@
             </form>
         </div>			
     </div>    
-</div>   
+</div>    
     
 <div class="wrapper">
     <div class="page_pers">
@@ -279,16 +282,16 @@
                         <div class="page_pers-middle-ttl">Проекты:</div>
                         <div class="page_pers-middle-menu">
                             <ul>
-                                <li><a href="#" class="active">Бурение Скважины в море</a></li>
-                                <li><a href="#">Установка Вышки Бурение </a></li>
-                                <li><a href="#">Бурение Скважины в море</a></li>
+                                <li><a href="#"  data-for="cont1">Бурение Скважины в море</a></li>
+                                <li><a href="#" data-for="cont2" >Установка Вышки Бурение </a></li>
+                                <li><a href="#" data-for="cont3" >Бурение Скважины в море</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-5 order-sm-5">
                     <div class="page_pers-right">
-                        <div class="page_pers-right-cont proj">
+                        <div class="page_pers-right-cont proj hidden" id="cont1">
                             <div class="page_pers-right-doc">
                                 <div class="page_pers-right-doc-ttl">Текст Контракта <span>№ 24458635</span></div>
                                 <div class="page_pers-right-doc-cont">
@@ -313,6 +316,56 @@
                                 <button class="page_pers-right-doc-btn" >Добавить</button>
                             </div>
                         </div>   
+                        <div class="page_pers-right-cont proj hidden" id="cont2">
+                            <div class="page_pers-right-doc">
+                                <div class="page_pers-right-doc-ttl">Текст Контракта <span>№ 24458635</span></div>
+                                <div class="page_pers-right-doc-cont">
+                                    <input type="file" class="page_pers-right-doc-file" value="C:\fakepath\svidetelstvo.jpg">
+                                    <label class="page_pers-right-doc-lbl">contract.pdf</label>
+                                </div>
+                            </div>
+                            <div class="page_pers-right-doc">
+                                <div class="page_pers-right-doc-ttl">Акт Испытаний</div>
+                                <div class="page_pers-right-doc-cont">
+                                    <input type="file" class="page_pers-right-doc-file" value="">
+                                    <label class="page_pers-right-doc-lbl">test.pdf</label>
+                                </div>
+                                <button class="page_pers-right-doc-btn" >Добавить</button>
+                            </div>
+                            <div class="page_pers-right-doc">
+                                <div class="page_pers-right-doc-ttl">Сертификат</div>
+                                <div class="page_pers-right-doc-cont">
+                                    <input type="file" class="page_pers-right-doc-file" value="">
+                                    <label class="page_pers-right-doc-lbl">sertificat.pdf</label>
+                                </div>
+                                <button class="page_pers-right-doc-btn" >Добавить</button>
+                            </div>
+                        </div>  
+                        <div class="page_pers-right-cont proj hidden" id="cont3">
+                            <div class="page_pers-right-doc">
+                                <div class="page_pers-right-doc-ttl">Текст Контракта <span>№ 24458635</span></div>
+                                <div class="page_pers-right-doc-cont">
+                                    <input type="file" class="page_pers-right-doc-file" value="C:\fakepath\svidetelstvo.jpg">
+                                    <label class="page_pers-right-doc-lbl">contract.pdf</label>
+                                </div>
+                            </div>
+                            <div class="page_pers-right-doc">
+                                <div class="page_pers-right-doc-ttl">Акт Испытаний</div>
+                                <div class="page_pers-right-doc-cont">
+                                    <input type="file" class="page_pers-right-doc-file" value="">
+                                    <label class="page_pers-right-doc-lbl">test.pdf</label>
+                                </div>
+                                <button class="page_pers-right-doc-btn" >Добавить</button>
+                            </div>
+                            <div class="page_pers-right-doc">
+                                <div class="page_pers-right-doc-ttl">Сертификат</div>
+                                <div class="page_pers-right-doc-cont">
+                                    <input type="file" class="page_pers-right-doc-file" value="">
+                                    <label class="page_pers-right-doc-lbl">sertificat.pdf</label>
+                                </div>
+                                <button class="page_pers-right-doc-btn" >Добавить</button>
+                            </div>
+                        </div>  
                     </div>
                 </div>                           
             </div>                      
@@ -407,6 +460,18 @@ $('.page_prod-burger-ttl').click(function(){
     else {
         addCl.addClass('opened');
     }
+});    
+</script>
+
+<script>
+var midMenu;
+$('.page_pers-middle-menu a').click(function(e){
+    e.preventDefault();
+    midMenu = $(this).attr('data-for');
+    $('.page_pers-middle-menu a').removeClass('active');
+    $(this).addClass('active');
+    $('.page_pers-right-cont').addClass('hidden');
+    $('#'+midMenu).removeClass('hidden');
 });    
 </script>
 

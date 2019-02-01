@@ -1,7 +1,7 @@
 /*page_about*/
 .page_about {background: #fff; padding-top: 225px; padding-bottom: 125px;
-    &-ttl { font-size: 48px; padding-left: 100px; line-height: 1.29; margin-bottom: 50px; } 
-    &-bl{ max-width: 512px; margin-left: 100px; margin-bottom: 89px;
+    &-ttl { font-size: 48px; line-height: 1.29; margin-bottom: 50px; } 
+    &-bl{ max-width: 512px; margin-bottom: 89px;
         &-img {min-height: 328px; width: 100%; background: #ddd;display:block;
             &:hover, &:focus {text-decoration:none;color:#000;}
         }
@@ -61,14 +61,8 @@
     }     
 }
 /*page_about*/
-@media(max-width: 1600px) and (min-width: 992px){
-    .page_about {
-        &-ttl {padding-left: 50px;}
-        &-bl {margin-left: 50px;margin-right: 50px;}
-    }
-}
 @media(max-width: 991px) and (min-width: 768px){
-    .page_about-bl {  max-width: 100%; margin-left: 0;}
+    .page_about-bl {  max-width: 100%; }
 }
 @media(max-width: 767px){
     .page_about{padding-top: 125px; padding-bottom: 75px;

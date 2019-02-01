@@ -148,7 +148,7 @@
             &-ico { margin-top: 5vh; }        
         } 
         &-cont { padding-top: 57px; } 
-        &-last { padding-left: 75px; padding-right: 128px; 
+        &-last { padding-left: 50px; padding-right: 60px; 
             &-bl-txt { margin-top: 14px; } 
             &-btm-cat { margin-top: 40px; font-size: 26px; } 
             &-btm-ques.call_us { margin-top: 40px; font-size: 26px; }        
@@ -234,6 +234,10 @@
         } 
     } 
 }    
+@media(max-width: 1600px) and (min-width: 1200px){
+    .third-btm-ques{font-size:25px;}
+    .third-btm-cat{font-size:25px;}
+}
 
 /*fourth*/
 .fourth {background: rgba(0,0,0,0.4); padding-bottom: 168px;padding-top: 184px;

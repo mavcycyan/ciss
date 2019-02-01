@@ -3,16 +3,16 @@
     &-sub_menu {
         ul { list-style: none; margin: 0; padding: 0; 
             li { display: inline-block; margin-bottom: 15px; 
-                a {display: block;padding: 2px 33px 13px;border-bottom: 1px solid transparent;color: #345e9480;
+                a {display: block;padding: 2px 20px 13px;border-bottom: 1px solid transparent;color: #345e9480;
                     &.active { border-bottom: 1px solid #345e94; color: #345e94; }
                     &:hover, &:focus {text-decoration: none;}
                 } 
             } 
         } 
     }
-    &-left { padding-left: 100px; 
+    &-left { 
         &-ttl { padding: 10px 0; padding-left: 28px; background: url(../img/user_black.svg)no-repeat 0% 50%; background-size: 15px 14px; } 
-        &-menu { margin-top: 167px; 
+        &-menu { margin-top: 8vw; 
             ul { list-style: none; padding: 0; margin: 0;  
                 li {
                     a {color: #345e94;margin-bottom: 65px;font-size: 30px;display: block;opacity: 0.5;
@@ -23,7 +23,7 @@
             }    
         } 
     }
-    &-middle { margin-top: 167px;  
+    &-middle { margin-top: 8vw;  
         &-menu { margin-top: 17px; 
             ul { margin: 0; padding: 0; list-style: none; 
                 li {
@@ -35,7 +35,7 @@
             } 
         }                             
     }    
-    &-graph { margin-top: 167px; 
+    &-graph { margin-top: 8vw; 
         &-menu { padding: 49px 0 5px; list-style: none;margin: 0; position: relative; overflow: hidden;
             &:before {content: ''; width: 1px; background: #345e94; height: 100%; position: absolute; display: block; bottom: 0; left: 7px; margin: 0 0; opacity: 0.5;}
             li {position: relative; height: 62px;
@@ -52,9 +52,10 @@
             }
         }        
     }     
-    &-right {margin-right: 100px;
-        &-cont {
-            &.proj {margin-top: 167px;}
+    &-right {
+        &-cont { overflow: hidden;height: auto;
+            &.proj {margin-top: 8vw;} 
+            &.hidden {height: 0;margin-top: 0;}
         }
         &-bl {margin-bottom: 53px; 
             &-input { display: block; width: 100%; border: 0; margin-top: 7px; color: #345e94; font-size: 30px; border-bottom: 1px solid #345e9480; padding-bottom: 7px;  
@@ -73,10 +74,10 @@
             }
         } 
         &-doc {margin-bottom: 53px; border-bottom: 1px solid #00000080; padding-bottom: 20px;
-            &-ttl {
+            &-ttl {line-height: 2;
                  span { border-radius: 16px; border: 1px solid #0003; padding: 5px 10px; margin-left: 10px; }
             }
-            &-cont { position: relative; } 
+            &-cont { position: relative;} 
             &-clear { background: none; border: 0; color: #345e94; font-size: 20px; position: absolute; right: 0; top: 50%; margin-top: -16px; }
             &-input { display: block; width: 100%; border: 0; margin-top: 7px; color: #345e94; font-size: 30px; border-bottom: 1px solid #345e9480; padding-bottom: 7px;  
                 &:focus {box-shadow: none; outline: 0;}
@@ -86,7 +87,9 @@
                 &:-ms-input-placeholder      {color:#345e94;opacity: 0.5;}                
             }
             &-file { display: none; }
-            &-lbl { color: #345e94; font-size: 30px; display: block; margin-top: 10px; text-decoration: underline; }
+            &-lbl { color: #345e94; font-size: 30px; display: block; margin-top: 10px; 
+                &:hover {text-decoration: underline;}
+            }
             &-new { opacity: 0.4; }
             &-btn { display: inline-block; border: 0; background: url('../img/upl.svg')no-repeat 0% 50%; background-size: 19px 16px; margin-top: 44px; color: #000; padding-left: 31px; text-align: left;
                 &:focus {box-shadow: none; outline: 0;}
@@ -119,13 +122,6 @@
     }
 }
 /*page_pers*/
-
-@media(max-width: 1600px) and (min-width: 992px) {
-    .page_pers{
-        &-left { padding-left: 50px;}
-        &-right {margin-right: 50px;}
-    }                                                            
-}
 @media(max-width: 1199px) and (min-width: 992px) {
     .page_pers-left-menu ul li a {margin-bottom: 50px; font-size: 22px; }
 }

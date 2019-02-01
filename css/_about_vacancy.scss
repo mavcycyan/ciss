@@ -1,13 +1,14 @@
 /*page_vacs*/
 .page_vacs {background: #fff; padding-top: 225px; padding-bottom: 125px;
-    &-ttl { font-size: 48px; padding-left: 100px; line-height: 1.29; margin-bottom: 50px; } 
+    &-ttl { font-size: 48px; line-height: 1.29; margin-bottom: 50px; } 
     &-links {    margin-right: 50px;}
     &-tab { font-size: 30px; color: #345e94; opacity: 0.5; line-height: 1.29; margin-bottom: 51px; cursor: pointer;
         &:last-child { margin-bottom: 0; } 
         &.active { opacity: 1; } 
     } 
-    &-cont { margin-top: 0; overflow: hidden; height: 0px; padding-left: 80px; padding-right: 80px;
+    &-cont { margin-top: 0; overflow: hidden; height: 0px;
         &.active { height: auto;margin-top: 114px; }
+        .lSSlideOuter { padding: 0!important; }
     }
     .slider-docs{
         &-bl { display: block; max-width: 256px; margin: 0 0; color: #000; position: relative;
@@ -21,16 +22,6 @@
     }
 }
 /*page_vacs*/
-@media(max-width: 1600px) and (min-width: 992px){
-    .page_vacs2 {
-        &-ttl {padding-left: 50px;}
-    }
-}
-@media(max-width: 991px) and (min-width: 768px){
-    .page_vacs {
-        &-ttl { padding-left: 0px; }
-    }
-}
 @media(max-width: 767px){
     .page_vacs{padding-top: 125px; padding-bottom: 75px;
         &-ttl { padding: 0 7px; font-size: 30px; position: relative; 

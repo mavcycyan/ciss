@@ -1,17 +1,19 @@
 /*page_services*/
 .page_services {background: #fff; padding-top: 225px; padding-bottom: 125px;
-    &-ttl { font-size: 48px; padding-left: 100px; line-height: 1.29; margin-bottom: 50px; } 
-    &-bl{ max-width: 512px; margin-left: 100px; padding-bottom: 89px; position: relative; padding-left: 119px; border-bottom: 1px solid #37373733;
+    &-ttl { font-size: 48px; line-height: 1.29; margin-bottom: 50px; } 
+    &-bl{ /*max-width: 512px;*/ max-width: 28vw; margin-top: 53px; width: 100%; padding-bottom: 4.5vw; position: relative; padding-left: 119px; border-bottom: 1px solid #37373733;
+        &.f-l { float: left;}
+        &.f-r { float: right;}
         &-num { position: absolute; top: 0; left: 0; font-size: 26px; color: #345e94; width: 70px; height: 50px; background: url(../img/num2.svg), no-repeat 50% 100px; background-size: 100% 100%; text-align: center; padding: 0px 10px; line-height: 1.1;}
         &-img {min-height: 328px; width: 100%; background: #ddd;display:block;
             &:hover, &:focus {text-decoration:none;color:#000;}
         }
-        &-ttl { margin-top: 53px; font-size: 30px;  display:block; color: #000; padding-right: 20px; position: relative; cursor: pointer;
+        &-ttl { font-size: 1.6vw;  display:block; color: #000; padding-right: 20px; position: relative; cursor: pointer;
             &:hover, &:focus {text-decoration:none;color:#000;
                 &:after {content: '';background: url('../img/plus_black.svg');background-size: 100% 100%;width: 13px;height: 13px;position: absolute;right: 0; top: 14px;}
             }
         } 
-        &-txt { font-size: 16px; margin-top: 49px; color: #373737; line-height: 1.46; display:block; padding-right: 20px; position: relative; opacity: 0.5;
+        &-txt { font-size: 0.85vw; margin-top: 2.6vw; color: #373737; line-height: 1.46; display:block; padding-right: 20px; position: relative; opacity: 0.5;
             &:hover, &:focus {text-decoration:none;color:#000;}
             .burg { position: absolute; top: 50%; right: 0; width: 13px; height: 13px; 
                 span { display: block; background: #000; height: 1px; margin: 2px 0; 
@@ -35,7 +37,6 @@
 @media(max-width: 1600px) and (min-width: 992px){
     .page_services {
         &-ttl {padding-left: 50px;}
-        &-bl {margin-left: 50px;margin-right: 50px;}
     }
 }
 @media(max-width: 1199px) and (min-width: 992px){
