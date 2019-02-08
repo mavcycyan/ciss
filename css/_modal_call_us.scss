@@ -1,16 +1,21 @@
 /*page_about*/
 .modal_call_us {padding-top: 225px;
     &_wp { min-height: 100vh; background: #345e94;
-        .fancybox-close { position: absolute; right: 15%; display: block; top: 185px; color: #fff; 
-            &:after { content: 'x'; font-size: 30px; }
+        .fancybox-close { position: absolute; right: 15%; display: block; top: 185px; color: #fff; background: none;
+            &:after {content: ''; font-size: 30px; background: url(../img/cross.svg); background-size: 19px 19px; width: 19px; height: 19px; display: block; }
         }  
-        .fancybox-skin { min-height: 100vh; } 
+        .fancybox-skin { min-height: 100vh; background: #345e94;} 
         .fancybox-outer { min-height: 100vh; } 
         .fancybox-inner { min-height: 100vh; }        
     }
     &-bl {max-width: 612px;margin-bottom: 160px;
         label { height: 26px; color: #fff; display: block; margin: 0; } 
-        input { border: 0; border-bottom: 1px solid #ffffff80; font-size: 32px; color: #fff; background: transparent; padding: 0; padding-bottom: 9px; margin-top: 9px; display: block; width: 100%; }
+        input { border: 0; border-bottom: 1px solid #ffffff80; font-size: 32px; color: #fff; background: transparent; padding: 0; padding-bottom: 9px; margin-top: 9px; display: block; width: 100%; 
+            &::-webkit-input-placeholder {color:#fff;}
+            &::-moz-placeholder          {color:#fff;}
+            &:-moz-placeholder           {color:#fff;}
+            &:-ms-input-placeholder      {color:#fff;}        
+        }
         &.left { margin-left: 100px; } 
         &.right { margin-right: 100px; } 
         button { background: none; border: 0; color: #fff; font-size: 30px; } 

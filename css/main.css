@@ -868,14 +868,18 @@ header.color-white .h-user { background: url("../img/user.svg"); background-size
 /*page_about*/
 .modal_call_us { padding-top: 225px; }
 .modal_call_us_wp { min-height: 100vh; background: #345e94; }
-.modal_call_us_wp .fancybox-close { position: absolute; right: 15%; display: block; top: 185px; color: #fff; }
-.modal_call_us_wp .fancybox-close:after { content: 'x'; font-size: 30px; }
-.modal_call_us_wp .fancybox-skin { min-height: 100vh; }
+.modal_call_us_wp .fancybox-close { position: absolute; right: 15%; display: block; top: 185px; color: #fff; background: none; }
+.modal_call_us_wp .fancybox-close:after { content: ''; font-size: 30px; background: url(../img/cross.svg); background-size: 19px 19px; width: 19px; height: 19px; display: block; }
+.modal_call_us_wp .fancybox-skin { min-height: 100vh; background: #345e94; }
 .modal_call_us_wp .fancybox-outer { min-height: 100vh; }
 .modal_call_us_wp .fancybox-inner { min-height: 100vh; }
 .modal_call_us-bl { max-width: 612px; margin-bottom: 160px; }
 .modal_call_us-bl label { height: 26px; color: #fff; display: block; margin: 0; }
 .modal_call_us-bl input { border: 0; border-bottom: 1px solid #ffffff80; font-size: 32px; color: #fff; background: transparent; padding: 0; padding-bottom: 9px; margin-top: 9px; display: block; width: 100%; }
+.modal_call_us-bl input::-webkit-input-placeholder { color: #fff; }
+.modal_call_us-bl input::-moz-placeholder { color: #fff; }
+.modal_call_us-bl input:-moz-placeholder { color: #fff; }
+.modal_call_us-bl input:-ms-input-placeholder { color: #fff; }
 .modal_call_us-bl.left { margin-left: 100px; }
 .modal_call_us-bl.right { margin-right: 100px; }
 .modal_call_us-bl button { background: none; border: 0; color: #fff; font-size: 30px; }
