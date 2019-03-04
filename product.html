@@ -242,12 +242,12 @@
             </div>        
             <div class="page_prod-main-sl">
                <div class="container">
-                    <ul id="slider-prod">
-                        <li><a href="img/prod1.jpg" class="fancybox"><img src="img/prod1.jpg" alt=""></a></li>
-                        <li><a href="img/prod2.jpg" class="fancybox"><img src="img/prod2.jpg" alt=""></a></li>
-                        <li><a href="img/prod1.jpg" class="fancybox"><img src="img/prod1.jpg" alt=""></a></li>
-                        <li><a href="img/prod2.jpg" class="fancybox"><img src="img/prod2.jpg" alt=""></a></li>
-                    </ul>
+                    <div id="slider-prod">
+                        <div class="page_prod-main-sl-bl"><a href="img/prod1.jpg" class="fancybox"><img src="img/prod1.jpg" alt=""></a></div>
+                        <div class="page_prod-main-sl-bl"><a href="img/prod2.jpg" class="fancybox"><img src="img/prod2.jpg" alt=""></a></div>
+                        <div class="page_prod-main-sl-bl"><a href="img/prod1.jpg" class="fancybox"><img src="img/prod1.jpg" alt=""></a></div>
+                        <div class="page_prod-main-sl-bl"><a href="img/prod2.jpg" class="fancybox"><img src="img/prod2.jpg" alt=""></a></div>
+                    </div>
                 </div>
             </div>  
             <div class="container">
@@ -426,6 +426,29 @@ $('.page_prod-burger-ttl').click(function(){
 });    
 </script>
 
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+$(".fancybox").fancybox();
+});
+</script>	
+<script>
+$(window).load(function() {
+$('.load').fadeOut('slow');
+});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+            $('.fancy-vid').fancybox({
+                width: 640,
+                height: 400,
+                type: 'iframe'
+            });
+});
+</script>	
+
 <script type="text/javascript" src="js/lightslider.min.js"></script>
 <script>
 $(document).ready(function() {		
@@ -457,59 +480,39 @@ $(document).ready(function() {
         });
 });
 </script>
-<script>
-$(document).ready(function() {		
-    $('#slider-prod').lightSlider({
-        item:2,
-        auto:false,
-        loop:false,
-        pause: 4000,
-        speed:1000,
-        controls:false,
-        enableDrag:true,
-        enableTouch:true,
-        freeMove:false,
-        pager:false, 
-        onSliderLoad: function() {
-                $('#slider-prod').removeClass('cS-hidden');
-        },
-        responsive : [
-        {
-            breakpoint:991, 
-                settings: {item:2}
-        },
-        {
-            breakpoint:767, 
-                settings: {item:1}
-        }  
-        ]
 
-        });
+    <script src="js/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+<script>
+// Init fancyBox
+$().fancybox({
+  selector : '.slick-slide:not(.slick-cloned)',
+  hash     : false
 });
+
+// Init Slick
+$("#slider-prod").slick({
+  slidesToShow   : 2,
+  slidesToScroll : 1,
+  infinite : true,
+  dots     : false,
+  arrows   : false,
+  responsive : [
+    {
+      breakpoint : 767,
+      settings : {
+        slidesToShow   : 1,
+        slidesToScroll : 1
+      }
+    }
+  ]
+});
+
+    
 </script>
 
-<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>
-
-
-<script type="text/javascript">
-jQuery(document).ready(function($){
-$(".fancybox").fancybox();
-});
-</script>	
-<script>
-$(window).load(function() {
-$('.load').fadeOut('slow');
-});
-</script>
-<script type="text/javascript">
-jQuery(document).ready(function($){
-            $('.fancy-vid').fancybox({
-                width: 640,
-                height: 400,
-                type: 'iframe'
-            });
-});
-</script>	
 <script>
 jQuery(document).ready(function($){	
     $(".page_prod-links-proj").fancybox({ 

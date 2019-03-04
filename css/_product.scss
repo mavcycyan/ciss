@@ -19,11 +19,11 @@
     &-main-sl {overflow-x: hidden; margin-bottom: 90px; 
         .lSSlideOuter { overflow: visible; } 
         .lSSlideWrapper { overflow: visible; }
-        li.lslide {opacity: 0.5;
-            &.active {opacity: 1;
-                &+li.lslide {opacity: 1;}
-            }
+        &-bl {opacity: 0.5;
+            &.slick-active {opacity: 1;}
         }
+        .slick-list {overflow: visible;}
+        
     } 
     &-right { margin-top: 53px;}
     &-vacs { max-width: 512px; margin-top: 60px; overflow: hidden; } 
