@@ -291,9 +291,9 @@
                                <div class="page_prod-vid-ttl">Видео</div>
                                <div class="page_prod-vid-sl">
                                    <ul class="slider-burg">
-                                       <li><a href="video/background.mp4" class="fancybox"><img src="img/burg2.jpg" alt=""></a></li>
-                                       <li><a href="video/background.mp4" class="fancybox"><img src="img/burg1.jpg" alt=""></a></li>
-                                       <li><a href="video/background.mp4" class="fancybox"><img src="img/burg2.jpg" alt=""></a></li>
+                                       <li><a href="video/background.mp4" class="fancy-vid"><img src="img/burg2.jpg" alt=""></a></li>
+                                       <li><a href="video/background.mp4" class="fancy-vid"><img src="img/burg1.jpg" alt=""></a></li>
+                                       <li><a href="video/background.mp4" class="fancy-vid"><img src="img/burg2.jpg" alt=""></a></li>
                                    </ul>
                                </div>
                            </div>                 
@@ -501,7 +501,15 @@ $(window).load(function() {
 $('.load').fadeOut('slow');
 });
 </script>
-
+<script type="text/javascript">
+jQuery(document).ready(function($){
+            $('.fancy-vid').fancybox({
+                width: 640,
+                height: 400,
+                type: 'iframe'
+            });
+});
+</script>	
 <script>
 jQuery(document).ready(function($){	
     $(".page_prod-links-proj").fancybox({ 
