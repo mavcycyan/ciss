@@ -923,5 +923,6 @@ footer { padding: 48px 35px; background: #345e94; }
   .f-menu ul li a { font-size: 30px; text-align: center; display: block; width: 100%; color: #ffffff80; }
   .f-menu ul li a:hover, .f-menu ul li a:focus { color: #fff; text-decoration: none; }
   .hidden-xs { display: none !important; } }
+input[type="file"] { display: none; }
 
 /*# sourceMappingURL=main.css.map */
