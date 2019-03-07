@@ -24,7 +24,7 @@
         } 
     }
     &-middle { margin-top: 8vw;  
-        &-menu { margin-top: 17px; 
+        &-menu, &-menu2 { margin-top: 17px; 
             ul { margin: 0; padding: 0; list-style: none; 
                 li {
                     a { display: block; color: #345e94; opacity: 0.5; font-size: 20px; margin-bottom: 22px; 
@@ -56,7 +56,7 @@
         &-wp-element { display: flex; 
             &.hidden { display: none; }
         }
-        &-cont { overflow: hidden;height: auto;
+        &-cont, &-cont2 { overflow: hidden;height: auto;
             &.proj {margin-top: 8vw;} 
             &.hidden {height: 0;margin-top: 0;}
         }
@@ -151,7 +151,7 @@
         &-middle {margin-top: 61px;}
         &-graph { margin-top: 0;  display: none;}
         &-right {margin: 7px;
-            &-cont {
+            &-cont, &-cont2 {
                 &.proj {margin-top: 61px;}
             }
         }

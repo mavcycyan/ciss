@@ -280,7 +280,7 @@
                 <div class="col-12 col-md-6 col-lg-4 order-3 order-sm-4">
                     <div class="page_pers-middle">
                         <div class="page_pers-middle-ttl">Проекты:</div>
-                        <div class="page_pers-middle-menu">
+                        <div class="page_pers-middle-menu2">
                             <ul>
                                 <li><a href="#" data-for="cont1" class="active">Бурение Скважины в море</a></li>
                                 <li><a href="#" data-for="cont2">Установка Вышки Бурение </a></li>
@@ -325,35 +325,35 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-7">
                                 <div class="page_pers-right">
-                                    <div id="cont1-1" class="page_pers-right-cont proj">
+                                    <div id="cont1-1" class="page_pers-right-cont2 proj">
                                         <div class="page_pers-right-contacts">
                                             <div class="page_pers-right-contacts-lbl">25 марта</div>
                                             <div class="page_pers-right-contacts-ttl">Строительство Вышки Закончено</div>
                                         </div>
                                         <a href="#" class="page_pers-right-contacts-see">Смотреть Фото-отчеты</a>
                                     </div> 
-                                    <div id="cont1-2" class="page_pers-right-cont proj hidden">
+                                    <div id="cont1-2" class="page_pers-right-cont2 proj hidden">
                                         <div class="page_pers-right-contacts">
                                             <div class="page_pers-right-contacts-lbl">3 мая</div>
                                             <div class="page_pers-right-contacts-ttl">Строительство Вышки Закончено</div>
                                         </div>
                                         <a href="#" class="page_pers-right-contacts-see">Смотреть Фото-отчеты</a>
                                     </div>
-                                    <div id="cont1-3" class="page_pers-right-cont proj hidden">
+                                    <div id="cont1-3" class="page_pers-right-cont2 proj hidden">
                                         <div class="page_pers-right-contacts">
                                             <div class="page_pers-right-contacts-lbl">14 мая</div>
                                             <div class="page_pers-right-contacts-ttl">Строительство Вышки Закончено</div>
                                         </div>
                                         <a href="#" class="page_pers-right-contacts-see">Смотреть Фото-отчеты</a>
                                     </div>
-                                    <div id="cont1-4" class="page_pers-right-cont proj hidden">
+                                    <div id="cont1-4" class="page_pers-right-cont2 proj hidden">
                                         <div class="page_pers-right-contacts">
                                             <div class="page_pers-right-contacts-lbl">27 мая</div>
                                             <div class="page_pers-right-contacts-ttl">Строительство Вышки Закончено</div>
                                         </div>
                                         <a href="#" class="page_pers-right-contacts-see">Смотреть Фото-отчеты</a>
                                     </div>
-                                    <div id="cont1-5" class="page_pers-right-cont proj hidden">
+                                    <div id="cont1-5" class="page_pers-right-cont2 proj hidden">
                                         <div class="page_pers-right-contacts">
                                             <div class="page_pers-right-contacts-lbl">4 июня</div>
                                             <div class="page_pers-right-contacts-ttl">Строительство Вышки Закончено</div>
@@ -382,14 +382,14 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-7">
                                 <div class="page_pers-right">
-                                    <div id="cont2-1" class="page_pers-right-cont proj">
+                                    <div id="cont2-1" class="page_pers-right-cont2 proj">
                                         <div class="page_pers-right-contacts">
                                             <div class="page_pers-right-contacts-lbl">3 Сентября</div>
                                             <div class="page_pers-right-contacts-ttl">День прощаний</div>
                                         </div>
                                         <a href="#" class="page_pers-right-contacts-see">Смотреть Фото-отчеты</a>
                                     </div> 
-                                    <div id="cont2-2" class="page_pers-right-cont proj hidden">
+                                    <div id="cont2-2" class="page_pers-right-cont2 proj hidden">
                                         <div class="page_pers-right-contacts">
                                             <div class="page_pers-right-contacts-lbl">9 мая</div>
                                             <div class="page_pers-right-contacts-ttl">День победы</div>
@@ -507,21 +507,21 @@ $('.page_pers-graph-menu a').click(function(e){
     midMenu = $(this).attr('data-for');
     $('.page_pers-graph-menu li').removeClass('active');
     $(this).parent('li').addClass('active');
-    $('.page_pers-right-cont').addClass('hidden');
+    $('.page_pers-right-cont2').addClass('hidden');
     $('#'+midMenu).removeClass('hidden');
 });    
 </script>
 
 <script>
 var midMenu;
-$('.page_pers-middle-menu a').click(function(e){
+$('.page_pers-middle-menu2 a').click(function(e){
     e.preventDefault();
     midMenu = $(this).attr('data-for');
-    $('.page_pers-middle-menu a').removeClass('active');
+    $('.page_pers-middle-menu2 a').removeClass('active');
     $(this).addClass('active');
     $('.page_pers-right-wp-element').addClass('hidden');
     $('#'+midMenu).removeClass('hidden');
-    $('.page_pers-right-cont').addClass('hidden');
+    $('.page_pers-right-cont2').addClass('hidden');
     $('#'+midMenu+'-1').removeClass('hidden');
     $('.page_pers-graph-menu li').removeClass('active');
     $('[data-for="'+midMenu+'-1"]').parent('li').addClass('active');

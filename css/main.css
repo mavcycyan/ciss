@@ -3000,22 +3000,22 @@ header.color-white .h-user {
           color: #345e94; }
   .page_pers-middle {
     margin-top: 8vw; }
-    .page_pers-middle-menu {
+    .page_pers-middle-menu, .page_pers-middle-menu2 {
       margin-top: 17px; }
-      .page_pers-middle-menu ul {
+      .page_pers-middle-menu ul, .page_pers-middle-menu2 ul {
         margin: 0;
         padding: 0;
         list-style: none; }
-        .page_pers-middle-menu ul li a {
+        .page_pers-middle-menu ul li a, .page_pers-middle-menu2 ul li a {
           display: block;
           color: #345e94;
           opacity: 0.5;
           font-size: 20px;
           margin-bottom: 22px; }
-          .page_pers-middle-menu ul li a:hover, .page_pers-middle-menu ul li a:focus {
+          .page_pers-middle-menu ul li a:hover, .page_pers-middle-menu ul li a:focus, .page_pers-middle-menu2 ul li a:hover, .page_pers-middle-menu2 ul li a:focus {
             box-shadow: none;
             outline: 0; }
-          .page_pers-middle-menu ul li a.active {
+          .page_pers-middle-menu ul li a.active, .page_pers-middle-menu2 ul li a.active {
             opacity: 1; }
   .page_pers-graph {
     margin-top: 8vw; }
@@ -3085,12 +3085,12 @@ header.color-white .h-user {
     display: flex; }
     .page_pers-right-wp-element.hidden {
       display: none; }
-  .page_pers-right-cont {
+  .page_pers-right-cont, .page_pers-right-cont2 {
     overflow: hidden;
     height: auto; }
-    .page_pers-right-cont.proj {
+    .page_pers-right-cont.proj, .page_pers-right-cont2.proj {
       margin-top: 8vw; }
-    .page_pers-right-cont.hidden {
+    .page_pers-right-cont.hidden, .page_pers-right-cont2.hidden {
       height: 0;
       margin-top: 0; }
   .page_pers-right-bl {
@@ -3290,7 +3290,7 @@ header.color-white .h-user {
       display: none; }
     .page_pers-right {
       margin: 7px; }
-      .page_pers-right-cont.proj {
+      .page_pers-right-cont.proj, .page_pers-right-cont2.proj {
         margin-top: 61px; } }
 /*page_about*/
 .modal_call_us {
