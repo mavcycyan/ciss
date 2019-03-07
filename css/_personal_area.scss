@@ -53,6 +53,9 @@
         }        
     }     
     &-right {
+        &-wp-element { display: flex; 
+            &.hidden { display: none; }
+        }
         &-cont { overflow: hidden;height: auto;
             &.proj {margin-top: 8vw;} 
             &.hidden {height: 0;margin-top: 0;}

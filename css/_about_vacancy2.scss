@@ -33,6 +33,7 @@
                 &:after {transform: rotate(-180deg);@include trans(0.3s);}
             }
         }
+        &-go { display: none; float: left; font-size: 30px; color: #345e94; opacity: 0.5; margin-right: 20px; margin-top: 30px;border: 0; background: #fff; cursor: pointer; }
     } 
 }
 /*page_vacs2*/
